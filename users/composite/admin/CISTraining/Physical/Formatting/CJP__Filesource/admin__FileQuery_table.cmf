@@ -1,0 +1,187 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="admin_FileQuery" path="/users/composite/admin/CISTraining/Physical/Formatting/CJP_Filesource/admin_FileQuery" type="TABLE" subtype="SQL_TABLE" changeToken="0" tableType="VIEW">
+  <columns>
+    <column name="City" nullable="true">
+      <datatype type="STRING" maxLength="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Today_High" nullable="true">
+      <datatype type="STRING" maxLength="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Today_Low" nullable="true">
+      <datatype type="STRING" maxLength="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Precipitation" nullable="true">
+      <datatype type="STRING" maxLength="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Tomorrow_Forecast" nullable="true">
+      <datatype type="STRING" maxLength="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Tomorrow_High" nullable="true">
+      <datatype type="STRING" maxLength="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Tomorrow_Low" nullable="true">
+      <datatype type="STRING" maxLength="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Day_After_Forecast" nullable="true">
+      <datatype type="STRING" maxLength="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Day_After_High" nullable="true">
+      <datatype type="STRING" maxLength="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Day_After_Low" nullable="true">
+      <datatype type="STRING" maxLength="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="TodayHigh" nullable="true">
+      <datatype type="FLOAT" minValue="1.1754943508222875E-38" maxValue="3.4028234663852886E38"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="TodayLow" nullable="true">
+      <datatype type="FLOAT" minValue="1.1754943508222875E-38" maxValue="3.4028234663852886E38"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="TomorrowHigh" nullable="true">
+      <datatype type="FLOAT" minValue="1.1754943508222875E-38" maxValue="3.4028234663852886E38"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="TomorrowLow" nullable="true">
+      <datatype type="FLOAT" minValue="1.1754943508222875E-38" maxValue="3.4028234663852886E38"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="DayAfterHigh" nullable="true">
+      <datatype type="FLOAT" minValue="1.1754943508222875E-38" maxValue="3.4028234663852886E38"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="DayAfterLow" nullable="true">
+      <datatype type="FLOAT" minValue="1.1754943508222875E-38" maxValue="3.4028234663852886E38"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes></indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/system/customfunctions/admin_ConvertToCelsius" type="PROCEDURE">
+    <datatype type="PROCEDURE" refId="1"></datatype>
+  </dependency>
+  <dependency target="/users/composite/admin/CISTraining/Physical/Metadata/CJP_Conversion/admin_ConvertToCelsius" type="PROCEDURE">
+    <datatype type="PROCEDURE" refId="1">
+      <element name="Argument" direction="IN">
+        <datatype type="FLOAT" minValue="1.1754943508222875E-38" maxValue="3.4028234663852886E38"/>
+      </element>
+      <element name="result" direction="OUT">
+        <datatype type="FLOAT" minValue="1.1754943508222875E-38" maxValue="3.4028234663852886E38"/>
+      </element>
+    </datatype>
+  </dependency>
+  <dependency target="/users/composite/admin/CISTraining/Physical/Metadata/CJP_Filesource/admin_FileQuery" type="PROCEDURE">
+    <datatype type="PROCEDURE" refId="1">
+      <element name="result" direction="OUT">
+        <datatype type="TABLE" refId="2">
+          <element name="City">
+            <datatype type="STRING" maxLength="2147483647"/>
+          </element>
+          <element name="Today_High">
+            <datatype type="STRING" maxLength="2147483647"/>
+          </element>
+          <element name="Today_Low">
+            <datatype type="STRING" maxLength="2147483647"/>
+          </element>
+          <element name="Precipitation">
+            <datatype type="STRING" maxLength="2147483647"/>
+          </element>
+          <element name="Tomorrow_Forecast">
+            <datatype type="STRING" maxLength="2147483647"/>
+          </element>
+          <element name="Tomorrow_High">
+            <datatype type="STRING" maxLength="2147483647"/>
+          </element>
+          <element name="Tomorrow_Low">
+            <datatype type="STRING" maxLength="2147483647"/>
+          </element>
+          <element name="Day_After_Forecast">
+            <datatype type="STRING" maxLength="2147483647"/>
+          </element>
+          <element name="Day_After_High">
+            <datatype type="STRING" maxLength="2147483647"/>
+          </element>
+          <element name="Day_After_Low">
+            <datatype type="STRING" maxLength="2147483647"/>
+          </element>
+        </datatype>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="SQL" type="STRING">SELECT 
+    admin_FileQuery.City, 
+    admin_FileQuery.Today_High, 
+    admin_FileQuery.Today_Low, 
+    admin_FileQuery.Precipitation, 
+    admin_FileQuery.Tomorrow_Forecast, 
+    admin_FileQuery.Tomorrow_High, 
+    admin_FileQuery.Tomorrow_Low, 
+    admin_FileQuery.Day_After_Forecast, 
+    admin_FileQuery.Day_After_High, 
+    admin_FileQuery.Day_After_Low,
+	admin_ConvertToCelsius(admin_FileQuery.Today_High) TodayHigh,
+	admin_ConvertToCelsius(admin_FileQuery.Today_Low) TodayLow,
+	admin_ConvertToCelsius(admin_FileQuery.Tomorrow_High) TomorrowHigh,
+	admin_ConvertToCelsius(admin_FileQuery.Tomorrow_Low) TomorrowLow,
+	admin_ConvertToCelsius(admin_FileQuery.Day_After_High)	DayAfterHigh,
+	admin_ConvertToCelsius(admin_FileQuery.Day_After_Low) DayAfterLow
+FROM      
+    /users/composite/admin/CISTraining/Physical/Metadata/CJP_Filesource/admin_FileQuery() admin_FileQuery</attribute>
+  <attribute name="creationDate" type="LONG">1479926853563</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1479927437323</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1479926853563</attribute>
+</metadata>

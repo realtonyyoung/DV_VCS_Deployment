@@ -1,0 +1,152 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="newCustomers" path="/users/composite/admin/CISTraining/Physical/DiscoveryModels/newCustomers" type="MODEL" subtype="NONE" changeToken="0">
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/users/composite/admin/CISTraining/Physical/Metadata/PostgreSQL_Orders" type="DATA_SOURCE">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <dependency target="/users/composite/admin/CISTraining/Physical/Metadata/PostgreSQL_Orders/tutorial/customers" type="TABLE">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <dependency target="/users/composite/admin/CISTraining/Physical/Metadata/PostgreSQL_Orders/tutorial/orderdetails" type="TABLE">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <dependency target="/users/composite/admin/CISTraining/Physical/Metadata/PostgreSQL_Orders/tutorial/orders" type="TABLE">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <dependency target="/users/composite/admin/CISTraining/Physical/Metadata/newCustomers" type="DATA_SOURCE">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <dependency target="/users/composite/admin/CISTraining/Physical/Metadata/newCustomers/tutorial/customers" type="TABLE">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <attribute name="creationDate" type="LONG">1505271843317</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="crossModelBlob" type="BYTE_ARRAY">rO0ABXcBAx+LCAAAAAAAAACllt9v21QUx4/dJG2a/m7XdqtAAw0YQzgSCGmiaCRNmzao2qq2qjQV
+ibnxTWLqxJ59XSeMQQYIHkBUTGy8gBgIeIC+TaoQPNBNAhUJ/gBAQhWapj0wtDceeIBzr53YyUg7
+qVe68fW953zP59xfzsZtCDtRURAAIBITKZzI6kUJq6FbKiWWI9mqVNQVohFTWlOJI5lEk6mql6yC
+akiL8opGTuLwPJE19SViOlNCCKUEMZZ4ugqsJI6f3uLPlTPu+xNX3QGvfHfHa6QGAZKXPuRtCsMp
+26J6kZinTIWY1oJtGJqK+iFBEQTLhO4X5TVZkh0qpfUS/f6Tp27+9PuS1QaRDBzMYc8CMVWOpEzK
+VF5CCWROQ9TQVRzE/gyELP4IW7SikVkYys2TszaxKFGSlJrqio35UzgwyyLFbapq8RnZKlCW8vgs
+hEpykVAYcIc1uZSPL6BXKT9eNtgMJBM8ky7WRt5BzstUpLrK4Le9Dz3w3I2v20BMQ6emy0pazlLd
+zECUFkxiFXRNKRvPukIdTgf+xrC2odxYPX2WrLRIyrQOvVr+6J3uW91pEaBsQpxbUjSQ6hZKqiCb
+GIqYGawyhjxSH7twP3345+mR50UQvCTPwisQKhsUIg5R8wWK4Xu5KEtaSiM3/fX2j5/+9sydP9Ep
+DeE1WbMJhu7zrU7axRVivrlx6b7Y+ztvMzIjwdf5iGWX3BzkGgF3tySF5NQSUV5YJRWM2O9rZUqU
+5Ik58MeVz/6+8NZxjJmpxWSo3ZCAVy3W6kDknFxUtQo2JnE76HluMVRGwZ76DKZ0TTeFz0de71t/
+0hYhnGZemlGQa7KzIGZxJ4y5S40u8SxziXPHBUPOkvFliObM/Ao3pyAup5dRhL+xgCN8S8C/WAy3
+OG0hMWQ4UUj0ubufAx/gVh9/1YcWgY5qtcp9RlMzeETwvKRuYu3nfgI7ugHbq1+8x0yH3GjQeehG
+7aDFRGYFgRM6t9V4Quequ5/QiTeCJzSa9U6o5R5Kph5mP6P/myAbOch+DgUTyQFsXfETYeNjPvxj
+G63hTzXBzyf2gL8YhO/S2bWiECqr2j74ufDl1vzrrfkXmvinYA/+o0H+COffB/lkT3VX8n9ak2eg
+kfz0XuTbQfKexot9f3snFW+ZwchFPwMKD1bcr1cBvyGymS1UpGlTt42GT1c6VEux5llLKaHunqLA
+meopdlAbr1S8bzC5HH6tGJkIzd8E1hu5+3Jn3Z18sCvhpd7LX/vYvcYaA+4d5t1k/tHH2ny71Ipv
+dR6Mb9CCvT/iTebEjDuZE681T2Z/fW0XPSHDEbCewR7JG2nx3KtgDMFdqGOXva52lj7WcEzAy9Zb
+sDldq8zid2BKyfsrFREijVl5d6YTZuzoHat7m9SJCte33QjM/phzWJjYDoII8NetH9pr7xidmR11
+engQYbLL3cGs81EvgKsTZX+a4JrRqJs87Ov277y7ydqhoO4w1xVT8zjrJ7DOt9Zv5r7epD997uVN
+bzJ9fW9yWvEmA7ycf9vXG+1Y2mw1D6kvkfXwvXEyxmRAt39nvf2uediD81oTZ1Bv+tx5rifeo95E
+A99wnbemt/r4Lx/Af5nggNALCwAA</attribute>
+  <attribute name="crossModelProperties" type="STRING_ARRAY">
+    <item>modeler.view.relationship.action.toggleNavigator</item>
+    <item>true</item>
+    <item>modeler.view.relationship.currentLayoutStyle</item>
+    <item>ORTHOGONAL</item>
+  </attribute>
+  <attribute name="descendentResourceRefs" type="SET">
+    <item type="OBJECT">rO0ABXNyACpjb20uY29tcG9zaXRlc3cuY29tbW9uLnJlcG9zaXRvcnkuUGF0aFR5cGUAABnTDJQk
+yQIAAlMABHR5cGVMAARwYXRodAAoTGNvbS9jb21wb3NpdGVzdy9jb21tb24vcmVwb3NpdG9yeS9Q
+YXRoO3hwAAJzcgAmY29tLmNvbXBvc2l0ZXN3LmNvbW1vbi5yZXBvc2l0b3J5LlBhdGhACAIJ5hQ4
+OAIAAloACGFic29sdXRlTAAFcGFydHN0ABBMamF2YS91dGlsL0xpc3Q7eHABc3IAE2phdmEudXRp
+bC5BcnJheUxpc3R4gdIdmcdhnQMAAUkABHNpemV4cAAAAAl3BAAAAAl0AAV1c2Vyc3QACWNvbXBv
+c2l0ZXQABWFkbWludAALQ0lTVHJhaW5pbmd0AAhQaHlzaWNhbHQACE1ldGFkYXRhdAARUG9zdGdy
+ZVNRTF9PcmRlcnN0AAh0dXRvcmlhbHQABm9yZGVyc3g=</item>
+    <item type="OBJECT">rO0ABXNyACpjb20uY29tcG9zaXRlc3cuY29tbW9uLnJlcG9zaXRvcnkuUGF0aFR5cGUAABnTDJQk
+yQIAAlMABHR5cGVMAARwYXRodAAoTGNvbS9jb21wb3NpdGVzdy9jb21tb24vcmVwb3NpdG9yeS9Q
+YXRoO3hwAAJzcgAmY29tLmNvbXBvc2l0ZXN3LmNvbW1vbi5yZXBvc2l0b3J5LlBhdGhACAIJ5hQ4
+OAIAAloACGFic29sdXRlTAAFcGFydHN0ABBMamF2YS91dGlsL0xpc3Q7eHABc3IAE2phdmEudXRp
+bC5BcnJheUxpc3R4gdIdmcdhnQMAAUkABHNpemV4cAAAAAl3BAAAAAl0AAV1c2Vyc3QACWNvbXBv
+c2l0ZXQABWFkbWludAALQ0lTVHJhaW5pbmd0AAhQaHlzaWNhbHQACE1ldGFkYXRhdAARUG9zdGdy
+ZVNRTF9PcmRlcnN0AAh0dXRvcmlhbHQADG9yZGVyZGV0YWlsc3g=</item>
+    <item type="OBJECT">rO0ABXNyACpjb20uY29tcG9zaXRlc3cuY29tbW9uLnJlcG9zaXRvcnkuUGF0aFR5cGUAABnTDJQk
+yQIAAlMABHR5cGVMAARwYXRodAAoTGNvbS9jb21wb3NpdGVzdy9jb21tb24vcmVwb3NpdG9yeS9Q
+YXRoO3hwAAJzcgAmY29tLmNvbXBvc2l0ZXN3LmNvbW1vbi5yZXBvc2l0b3J5LlBhdGhACAIJ5hQ4
+OAIAAloACGFic29sdXRlTAAFcGFydHN0ABBMamF2YS91dGlsL0xpc3Q7eHABc3IAE2phdmEudXRp
+bC5BcnJheUxpc3R4gdIdmcdhnQMAAUkABHNpemV4cAAAAAl3BAAAAAl0AAV1c2Vyc3QACWNvbXBv
+c2l0ZXQABWFkbWludAALQ0lTVHJhaW5pbmd0AAhQaHlzaWNhbHQACE1ldGFkYXRhdAARUG9zdGdy
+ZVNRTF9PcmRlcnN0AAh0dXRvcmlhbHQACWN1c3RvbWVyc3g=</item>
+    <item type="OBJECT">rO0ABXNyACpjb20uY29tcG9zaXRlc3cuY29tbW9uLnJlcG9zaXRvcnkuUGF0aFR5cGUAABnTDJQk
+yQIAAlMABHR5cGVMAARwYXRodAAoTGNvbS9jb21wb3NpdGVzdy9jb21tb24vcmVwb3NpdG9yeS9Q
+YXRoO3hwAAJzcgAmY29tLmNvbXBvc2l0ZXN3LmNvbW1vbi5yZXBvc2l0b3J5LlBhdGhACAIJ5hQ4
+OAIAAloACGFic29sdXRlTAAFcGFydHN0ABBMamF2YS91dGlsL0xpc3Q7eHABc3IAE2phdmEudXRp
+bC5BcnJheUxpc3R4gdIdmcdhnQMAAUkABHNpemV4cAAAAAl3BAAAAAl0AAV1c2Vyc3QACWNvbXBv
+c2l0ZXQABWFkbWludAALQ0lTVHJhaW5pbmd0AAhQaHlzaWNhbHQACE1ldGFkYXRhdAAMbmV3Q3Vz
+dG9tZXJzdAAIdHV0b3JpYWx0AAljdXN0b21lcnN4</item>
+  </attribute>
+  <attribute name="lastModifiedDate" type="LONG">1505272140819</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="memberResourceRefs" type="SET">
+    <item type="OBJECT">rO0ABXNyACpjb20uY29tcG9zaXRlc3cuY29tbW9uLnJlcG9zaXRvcnkuUGF0aFR5cGUAABnTDJQk
+yQIAAlMABHR5cGVMAARwYXRodAAoTGNvbS9jb21wb3NpdGVzdy9jb21tb24vcmVwb3NpdG9yeS9Q
+YXRoO3hwAAhzcgAmY29tLmNvbXBvc2l0ZXN3LmNvbW1vbi5yZXBvc2l0b3J5LlBhdGhACAIJ5hQ4
+OAIAAloACGFic29sdXRlTAAFcGFydHN0ABBMamF2YS91dGlsL0xpc3Q7eHABc3IAE2phdmEudXRp
+bC5BcnJheUxpc3R4gdIdmcdhnQMAAUkABHNpemV4cAAAAAd3BAAAAAd0AAV1c2Vyc3QACWNvbXBv
+c2l0ZXQABWFkbWludAALQ0lTVHJhaW5pbmd0AAhQaHlzaWNhbHQACE1ldGFkYXRhdAARUG9zdGdy
+ZVNRTF9PcmRlcnN4</item>
+    <item type="OBJECT">rO0ABXNyACpjb20uY29tcG9zaXRlc3cuY29tbW9uLnJlcG9zaXRvcnkuUGF0aFR5cGUAABnTDJQk
+yQIAAlMABHR5cGVMAARwYXRodAAoTGNvbS9jb21wb3NpdGVzdy9jb21tb24vcmVwb3NpdG9yeS9Q
+YXRoO3hwAAhzcgAmY29tLmNvbXBvc2l0ZXN3LmNvbW1vbi5yZXBvc2l0b3J5LlBhdGhACAIJ5hQ4
+OAIAAloACGFic29sdXRlTAAFcGFydHN0ABBMamF2YS91dGlsL0xpc3Q7eHABc3IAE2phdmEudXRp
+bC5BcnJheUxpc3R4gdIdmcdhnQMAAUkABHNpemV4cAAAAAd3BAAAAAd0AAV1c2Vyc3QACWNvbXBv
+c2l0ZXQABWFkbWludAALQ0lTVHJhaW5pbmd0AAhQaHlzaWNhbHQACE1ldGFkYXRhdAAMbmV3Q3Vz
+dG9tZXJzeA==</item>
+  </attribute>
+  <attribute name="modelBlob" type="BYTE_ARRAY">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
+vj/yH45htNkhFQAA</attribute>
+  <attribute name="modelProperties" type="STRING_ARRAY">
+    <item>modeler.view.relationship.action.toggleNavigator</item>
+    <item>true</item>
+    <item>modeler.view.relationship.currentLayoutStyle</item>
+    <item>ORTHOGONAL</item>
+  </attribute>
+  <attribute name="relatedResourceRefs" type="SET"></attribute>
+  <attribute name="relationshipCriteria" type="OBJECT">rO0ABXNyADZjb20uY29tcG9zaXRlc3cuY29tbW9uLnJlcG9zaXRvcnkuUmVsYXRpb25zaGlwQ3Jp
+dGVyaWEAAAAV30W50QIAB0kACG1heENvdW50RAAIbWF4U2NvcmVEAAhtaW5TY29yZUkADHNjYW5J
+ZEZpbHRlclsADWNhcmRpbmFsaXRpZXN0AAJbSVsACHN0YXR1c2VzcQB+AAFbAAV0eXBlc3EAfgAB
+eHB/////f+////////8/6AAAAAAAAP////91cgACW0lNumAmduqypQIAAHhwAAAABQAAAAQAAAAD
+AAAAAgAAAAEAAAAAdXEAfgADAAAABAAAAAEAAAACAAAAAAAAAANw</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1505271843317</attribute>
+  <attribute name="tableModelProperties" type="STRING_ARRAY"></attribute>
+</metadata>

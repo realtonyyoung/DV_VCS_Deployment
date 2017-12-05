@@ -1,0 +1,278 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="MathDemo" path="/users/composite/admin/CISTraining/Application/DefinitionSets/MathDemo" type="DEFINITION_SET" subtype="WSDL_DEFINITION_SET" changeToken="0">
+  <definitions>
+    <definition name="{http://www.cisco.com/cis/basictraining/MathDemoService}AddInt" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{http://www.cisco.com/cis/basictraining/MathDemoService}MathAddOpRequest" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{http://www.cisco.com/cis/basictraining/MathDemoService}MathAddOpResponse" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{http://www.cisco.com/cis/basictraining/MathDemoService}MathDemo" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{http://www.cisco.com/cis/basictraining/MathDemoService}MathDemoOp" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{http://www.cisco.com/cis/basictraining/MathDemoService}MathDemoOpResponse" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{http://www.cisco.com/cis/basictraining/MathDemoService}MathExpression" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{http://www.cisco.com/cis/basictraining/MathDemoService}MathSquareOpRequest" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{http://www.cisco.com/cis/basictraining/MathDemoService}MathSquareOpResponse" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{http://www.cisco.com/cis/basictraining/MathDemoService}SquareInt" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{http://www.cisco.com/cis/basictraining/MathDemoService}TableEntry" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{http://www.cisco.com/cis/basictraining/MathDemoService}TableExpression" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{http://www.cisco.com/cis/basictraining/MathDemoService}TableValue" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{http://www.cisco.com/cis/basictraining/MathDemoService}TimesTable" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+  </definitions>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="creationDate" type="LONG">1476467941322</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">true</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1476468001915</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1476467941322</attribute>
+  <attribute name="sources" type="LIST">
+    <list type="OBJECT">rO0ABXNyADVjb20uY29tcG9zaXRlc3cuY29tbW9uLnJlcG9zaXRvcnkuRGVmaW5pdGlvblNldFNv
+dXJjZVYpv6Zr2hqJAgACTAAIbG9jYXRpb250ABJMamF2YS9sYW5nL1N0cmluZztMAApzb3VyY2VU
+ZXh0cQB+AAF4cHQAFk1hdGhEZW1vLmFic3RyYWN0LndzZGx0FmY8d3NkbDpkZWZpbml0aW9ucyB4
+bWxuczp3c2RsPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93c2RsLyIgeG1sbnM6bWRzPSJo
+dHRwOi8vd3d3LmNpc2NvLmNvbS9jaXMvYmFzaWN0cmFpbmluZy9NYXRoRGVtb1NlcnZpY2UiIHht
+bG5zOnNvYXA9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzZGwvc29hcC8iIHRhcmdldE5h
+bWVzcGFjZT0iaHR0cDovL3d3dy5jaXNjby5jb20vY2lzL2Jhc2ljdHJhaW5pbmcvTWF0aERlbW9T
+ZXJ2aWNlIj4NCiAgPHdzZGw6dHlwZXM+DQogICAgPHhzOnNjaGVtYSB4bWxuczp4cz0iaHR0cDov
+L3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIGF0dHJpYnV0ZUZvcm1EZWZhdWx0PSJ1bnF1YWxp
+ZmllZCIgZWxlbWVudEZvcm1EZWZhdWx0PSJxdWFsaWZpZWQiIHRhcmdldE5hbWVzcGFjZT0iaHR0
+cDovL3d3dy5jaXNjby5jb20vY2lzL2Jhc2ljdHJhaW5pbmcvTWF0aERlbW9TZXJ2aWNlIj4NCiAg
+ICAgIDx4czplbGVtZW50IG5hbWU9Ik1hdGhEZW1vT3BSZXNwb25zZSI+DQogICAgICAgIDx4czpj
+b21wbGV4VHlwZT4NCiAgICAgICAgICA8eHM6c2VxdWVuY2U+DQogICAgICAgICAgICA8eHM6ZWxl
+bWVudCByZWY9Im1kczpNYXRoRGVtbyIvPg0KICAgICAgICAgIDwveHM6c2VxdWVuY2U+DQogICAg
+ICAgIDwveHM6Y29tcGxleFR5cGU+DQogICAgICA8L3hzOmVsZW1lbnQ+DQogICAgICA8eHM6ZWxl
+bWVudCBuYW1lPSJNYXRoRGVtb09wIj4NCiAgICAgICAgPHhzOmNvbXBsZXhUeXBlPg0KICAgICAg
+ICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9ImlwVGltZXNU
+YWJsZUludCIgbmlsbGFibGU9InRydWUiIHR5cGU9InhzOmludCIvPg0KICAgICAgICAgICAgPHhz
+OmVsZW1lbnQgbmFtZT0iaXBTcXVhcmVJbnQiIG5pbGxhYmxlPSJ0cnVlIiB0eXBlPSJ4czppbnQi
+Lz4NCiAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9ImlwQWRkSW50MSIgbmlsbGFibGU9InRy
+dWUiIHR5cGU9InhzOmludCIvPg0KICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iaXBBZGRJ
+bnQyIiBuaWxsYWJsZT0idHJ1ZSIgdHlwZT0ieHM6aW50Ii8+DQogICAgICAgICAgPC94czpzZXF1
+ZW5jZT4NCiAgICAgICAgPC94czpjb21wbGV4VHlwZT4NCiAgICAgIDwveHM6ZWxlbWVudD4NCiAg
+ICAgIDx4czplbGVtZW50IG5hbWU9Ik1hdGhTcXVhcmVPcFJlc3BvbnNlIj4NCiAgICAgICAgPHhz
+OmNvbXBsZXhUeXBlPg0KICAgICAgICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgICAgICAgIDx4czpl
+bGVtZW50IHJlZj0ibWRzOlNxdWFyZUludCIvPg0KICAgICAgICAgIDwveHM6c2VxdWVuY2U+DQog
+ICAgICAgIDwveHM6Y29tcGxleFR5cGU+DQogICAgICA8L3hzOmVsZW1lbnQ+DQogICAgICA8eHM6
+ZWxlbWVudCBuYW1lPSJNYXRoU3F1YXJlT3BSZXF1ZXN0Ij4NCiAgICAgICAgPHhzOmNvbXBsZXhU
+eXBlPg0KICAgICAgICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgICAgICAgIDx4czplbGVtZW50IG5h
+bWU9ImlwU3F1YXJlSW50IiBuaWxsYWJsZT0idHJ1ZSIgdHlwZT0ieHM6aW50Ii8+DQogICAgICAg
+ICAgPC94czpzZXF1ZW5jZT4NCiAgICAgICAgPC94czpjb21wbGV4VHlwZT4NCiAgICAgIDwveHM6
+ZWxlbWVudD4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9Ik1hdGhBZGRPcFJlc3BvbnNlIj4NCiAg
+ICAgICAgPHhzOmNvbXBsZXhUeXBlPg0KICAgICAgICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgICAg
+ICAgIDx4czplbGVtZW50IHJlZj0ibWRzOkFkZEludCIvPg0KICAgICAgICAgIDwveHM6c2VxdWVu
+Y2U+DQogICAgICAgIDwveHM6Y29tcGxleFR5cGU+DQogICAgICA8L3hzOmVsZW1lbnQ+DQogICAg
+ICA8eHM6ZWxlbWVudCBuYW1lPSJNYXRoQWRkT3BSZXF1ZXN0Ij4NCiAgICAgICAgPHhzOmNvbXBs
+ZXhUeXBlPg0KICAgICAgICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgICAgICAgIDx4czplbGVtZW50
+IG5hbWU9ImlwQWRkSW50MSIgbmlsbGFibGU9InRydWUiIHR5cGU9InhzOmludCIvPg0KICAgICAg
+ICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iaXBBZGRJbnQyIiBuaWxsYWJsZT0idHJ1ZSIgdHlwZT0i
+eHM6aW50Ii8+DQogICAgICAgICAgPC94czpzZXF1ZW5jZT4NCiAgICAgICAgPC94czpjb21wbGV4
+VHlwZT4NCiAgICAgIDwveHM6ZWxlbWVudD4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9Ik1hdGhE
+ZW1vIj4NCiAgICAgICAgPHhzOmNvbXBsZXhUeXBlPg0KICAgICAgICAgIDx4czpzZXF1ZW5jZT4N
+CiAgICAgICAgICAgIDx4czplbGVtZW50IG1heE9jY3Vycz0idW5ib3VuZGVkIiByZWY9Im1kczpN
+YXRoRXhwcmVzc2lvbiIvPg0KICAgICAgICAgIDwveHM6c2VxdWVuY2U+DQogICAgICAgIDwveHM6
+Y29tcGxleFR5cGU+DQogICAgICA8L3hzOmVsZW1lbnQ+DQogICAgICA8eHM6ZWxlbWVudCBuYW1l
+PSJNYXRoRXhwcmVzc2lvbiI+DQogICAgICAgIDx4czpjb21wbGV4VHlwZT4NCiAgICAgICAgICA8
+eHM6Y2hvaWNlPg0KICAgICAgICAgICAgPHhzOmVsZW1lbnQgcmVmPSJtZHM6QWRkSW50Ii8+DQog
+ICAgICAgICAgICA8eHM6ZWxlbWVudCByZWY9Im1kczpTcXVhcmVJbnQiLz4NCiAgICAgICAgICAg
+IDx4czplbGVtZW50IHJlZj0ibWRzOlRpbWVzVGFibGUiLz4NCiAgICAgICAgICA8L3hzOmNob2lj
+ZT4NCiAgICAgICAgPC94czpjb21wbGV4VHlwZT4NCiAgICAgIDwveHM6ZWxlbWVudD4NCiAgICAg
+IDx4czplbGVtZW50IG5hbWU9IkFkZEludCI+DQogICAgICAgIDx4czpjb21wbGV4VHlwZT4NCiAg
+ICAgICAgICA8eHM6c2ltcGxlQ29udGVudD4NCiAgICAgICAgICAgIDx4czpleHRlbnNpb24gYmFz
+ZT0ieHM6aW50ZWdlciI+DQogICAgICAgICAgICAgIDx4czphdHRyaWJ1dGUgbmFtZT0iaW5UZXJt
+MSIgdHlwZT0ieHM6aW50ZWdlciIgdXNlPSJyZXF1aXJlZCIvPg0KICAgICAgICAgICAgICA8eHM6
+YXR0cmlidXRlIG5hbWU9ImludGVybTIiIHR5cGU9InhzOmludGVnZXIiIHVzZT0icmVxdWlyZWQi
+Lz4NCiAgICAgICAgICAgIDwveHM6ZXh0ZW5zaW9uPg0KICAgICAgICAgIDwveHM6c2ltcGxlQ29u
+dGVudD4NCiAgICAgICAgPC94czpjb21wbGV4VHlwZT4NCiAgICAgIDwveHM6ZWxlbWVudD4NCiAg
+ICAgIDx4czplbGVtZW50IG5hbWU9IlNxdWFyZUludCI+DQogICAgICAgIDx4czpjb21wbGV4VHlw
+ZT4NCiAgICAgICAgICA8eHM6c2ltcGxlQ29udGVudD4NCiAgICAgICAgICAgIDx4czpleHRlbnNp
+b24gYmFzZT0ieHM6aW50ZWdlciI+DQogICAgICAgICAgICAgIDx4czphdHRyaWJ1dGUgbmFtZT0i
+aW5UZXJtMSIgdHlwZT0ieHM6aW50ZWdlciIgdXNlPSJyZXF1aXJlZCIvPg0KICAgICAgICAgICAg
+PC94czpleHRlbnNpb24+DQogICAgICAgICAgPC94czpzaW1wbGVDb250ZW50Pg0KICAgICAgICA8
+L3hzOmNvbXBsZXhUeXBlPg0KICAgICAgPC94czplbGVtZW50Pg0KICAgICAgPHhzOmVsZW1lbnQg
+bmFtZT0iVGltZXNUYWJsZSI+DQogICAgICAgIDx4czpjb21wbGV4VHlwZT4NCiAgICAgICAgICA8
+eHM6c2VxdWVuY2U+DQogICAgICAgICAgICA8eHM6ZWxlbWVudCBtYXhPY2N1cnM9InVuYm91bmRl
+ZCIgcmVmPSJtZHM6VGFibGVFbnRyeSIvPg0KICAgICAgICAgIDwveHM6c2VxdWVuY2U+DQogICAg
+ICAgICAgPHhzOmF0dHJpYnV0ZSBuYW1lPSJ0YWJsZU51bSIgdHlwZT0ieHM6aW50ZWdlciIgdXNl
+PSJyZXF1aXJlZCIvPg0KICAgICAgICA8L3hzOmNvbXBsZXhUeXBlPg0KICAgICAgPC94czplbGVt
+ZW50Pg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iVGFibGVFbnRyeSI+DQogICAgICAgIDx4czpj
+b21wbGV4VHlwZT4NCiAgICAgICAgICA8eHM6c2VxdWVuY2U+DQogICAgICAgICAgICA8eHM6ZWxl
+bWVudCByZWY9Im1kczpUYWJsZUV4cHJlc3Npb24iLz4NCiAgICAgICAgICAgIDx4czplbGVtZW50
+IHJlZj0ibWRzOlRhYmxlVmFsdWUiLz4NCiAgICAgICAgICA8L3hzOnNlcXVlbmNlPg0KICAgICAg
+ICA8L3hzOmNvbXBsZXhUeXBlPg0KICAgICAgPC94czplbGVtZW50Pg0KICAgICAgPHhzOmVsZW1l
+bnQgbmFtZT0iVGFibGVFeHByZXNzaW9uIiB0eXBlPSJ4czpzdHJpbmciLz4NCiAgICAgIDx4czpl
+bGVtZW50IG5hbWU9IlRhYmxlVmFsdWUiIHR5cGU9InhzOmludGVnZXIiLz4NCiAgICA8L3hzOnNj
+aGVtYT4NCiAgPC93c2RsOnR5cGVzPg0KICA8d3NkbDptZXNzYWdlIG5hbWU9Ik1hdGhEZW1vU3Zj
+UG9ydE1hdGhTcXVhcmVPcFNvYXBJbiI+DQogICAgPHdzZGw6cGFydCBuYW1lPSJpbnB1dFBhcmFt
+ZXRlcnMiIGVsZW1lbnQ9Im1kczpNYXRoU3F1YXJlT3BSZXF1ZXN0Ii8+DQogIDwvd3NkbDptZXNz
+YWdlPg0KICA8d3NkbDptZXNzYWdlIG5hbWU9Ik1hdGhEZW1vU3ZjUG9ydE1hdGhBZGRPcFNvYXBJ
+biI+DQogICAgPHdzZGw6cGFydCBuYW1lPSJpbnB1dFBhcmFtZXRlcnMiIGVsZW1lbnQ9Im1kczpN
+YXRoQWRkT3BSZXF1ZXN0Ii8+DQogIDwvd3NkbDptZXNzYWdlPg0KICA8d3NkbDptZXNzYWdlIG5h
+bWU9Ik1hdGhEZW1vU3ZjUG9ydE1hdGhEZW1vT3BTb2FwSW4iPg0KICAgIDx3c2RsOnBhcnQgbmFt
+ZT0iaW5wdXRQYXJhbWV0ZXJzIiBlbGVtZW50PSJtZHM6TWF0aERlbW9PcCIvPg0KICA8L3dzZGw6
+bWVzc2FnZT4NCiAgPHdzZGw6bWVzc2FnZSBuYW1lPSJNYXRoRGVtb1N2Y1BvcnRNYXRoU3F1YXJl
+T3BTb2FwT3V0Ij4NCiAgICA8d3NkbDpwYXJ0IG5hbWU9Im91dHB1dFBhcmFtZXRlcnMiIGVsZW1l
+bnQ9Im1kczpNYXRoU3F1YXJlT3BSZXNwb25zZSIvPg0KICA8L3dzZGw6bWVzc2FnZT4NCiAgPHdz
+ZGw6bWVzc2FnZSBuYW1lPSJNYXRoRGVtb1N2Y1BvcnRNYXRoQWRkT3BTb2FwT3V0Ij4NCiAgICA8
+d3NkbDpwYXJ0IG5hbWU9Im91dHB1dFBhcmFtZXRlcnMiIGVsZW1lbnQ9Im1kczpNYXRoQWRkT3BS
+ZXNwb25zZSIvPg0KICA8L3dzZGw6bWVzc2FnZT4NCiAgPHdzZGw6bWVzc2FnZSBuYW1lPSJNYXRo
+RGVtb1N2Y1BvcnRNYXRoRGVtb09wU29hcE91dCI+DQogICAgPHdzZGw6cGFydCBuYW1lPSJvdXRw
+dXRQYXJhbWV0ZXJzIiBlbGVtZW50PSJtZHM6TWF0aERlbW9PcFJlc3BvbnNlIi8+DQogIDwvd3Nk
+bDptZXNzYWdlPg0KICA8d3NkbDpwb3J0VHlwZSBuYW1lPSJNYXRoRGVtb1N2Y1BvcnRUeXBlIj4N
+CiAgICA8d3NkbDpvcGVyYXRpb24gbmFtZT0iTWF0aERlbW9PcCI+DQogICAgICA8d3NkbDppbnB1
+dCBtZXNzYWdlPSJtZHM6TWF0aERlbW9TdmNQb3J0TWF0aERlbW9PcFNvYXBJbiIvPg0KICAgICAg
+PHdzZGw6b3V0cHV0IG1lc3NhZ2U9Im1kczpNYXRoRGVtb1N2Y1BvcnRNYXRoRGVtb09wU29hcE91
+dCIvPg0KICAgIDwvd3NkbDpvcGVyYXRpb24+DQogICAgPHdzZGw6b3BlcmF0aW9uIG5hbWU9Ik1h
+dGhTcXVhcmVPcCI+DQogICAgICA8d3NkbDppbnB1dCBtZXNzYWdlPSJtZHM6TWF0aERlbW9TdmNQ
+b3J0TWF0aFNxdWFyZU9wU29hcEluIi8+DQogICAgICA8d3NkbDpvdXRwdXQgbWVzc2FnZT0ibWRz
+Ok1hdGhEZW1vU3ZjUG9ydE1hdGhTcXVhcmVPcFNvYXBPdXQiLz4NCiAgICA8L3dzZGw6b3BlcmF0
+aW9uPg0KICAgIDx3c2RsOm9wZXJhdGlvbiBuYW1lPSJNYXRoQWRkT3AiPg0KICAgICAgPHdzZGw6
+aW5wdXQgbWVzc2FnZT0ibWRzOk1hdGhEZW1vU3ZjUG9ydE1hdGhBZGRPcFNvYXBJbiIvPg0KICAg
+ICAgPHdzZGw6b3V0cHV0IG1lc3NhZ2U9Im1kczpNYXRoRGVtb1N2Y1BvcnRNYXRoQWRkT3BTb2Fw
+T3V0Ii8+DQogICAgPC93c2RsOm9wZXJhdGlvbj4NCiAgPC93c2RsOnBvcnRUeXBlPg0KPC93c2Rs
+OmRlZmluaXRpb25zPg0K</list>
+  </attribute>
+</metadata>

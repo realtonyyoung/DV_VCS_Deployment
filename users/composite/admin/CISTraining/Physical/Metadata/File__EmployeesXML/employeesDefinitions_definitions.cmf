@@ -1,0 +1,108 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="employeesDefinitions" path="/users/composite/admin/CISTraining/Physical/Metadata/File_EmployeesXML/employeesDefinitions" type="DEFINITION_SET" subtype="XML_SCHEMA_DEFINITION_SET" changeToken="0">
+  <definitions>
+    <definition name="dateOfBirth" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="first" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="id" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="last" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="record" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="xmlStuff" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+  </definitions>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="XMLFilePath" type="OBJECT">rO0ABXNyACZjb20uY29tcG9zaXRlc3cuY29tbW9uLnJlcG9zaXRvcnkuUGF0aEAIAgnmFDg4AgAC
+WgAIYWJzb2x1dGVMAAVwYXJ0c3QAEExqYXZhL3V0aWwvTGlzdDt4cAFzcgATamF2YS51dGlsLkFy
+cmF5TGlzdHiB0h2Zx2GdAwABSQAEc2l6ZXhwAAAACHcEAAAACHQABXVzZXJzdAAJY29tcG9zaXRl
+dAAFYWRtaW50AAtDSVNUcmFpbmluZ3QACFBoeXNpY2FsdAAITWV0YWRhdGF0ABFGaWxlX0VtcGxv
+eWVlc1hNTHQADWVtcGxveWVlcy54bWx4</attribute>
+  <attribute name="creationDate" type="LONG">1476807772578</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1476807772578</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1476807772578</attribute>
+  <attribute name="sources" type="LIST">
+    <list type="OBJECT">rO0ABXNyADVjb20uY29tcG9zaXRlc3cuY29tbW9uLnJlcG9zaXRvcnkuRGVmaW5pdGlvblNldFNv
+dXJjZVYpv6Zr2hqJAgACTAAIbG9jYXRpb250ABJMamF2YS9sYW5nL1N0cmluZztMAApzb3VyY2VU
+ZXh0cQB+AAF4cHQAMWZpbGU6L0M6L0FOQ0lTQiUyMC0lMjBMYWJzL0xhYiUyMDExL2VtcGxveWVl
+cy54bWx0AyU8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJ1dGYtOCI/Pg0KPHhzOnNjaGVt
+YSB4bWxuczp4cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIGVsZW1lbnRGb3Jt
+RGVmYXVsdD0icXVhbGlmaWVkIj4NCiAgPHhzOmVsZW1lbnQgbmFtZT0ieG1sU3R1ZmYiPg0KICAg
+IDx4czpjb21wbGV4VHlwZT4NCiAgICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgICAgPHhzOmVsZW1l
+bnQgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHJlZj0icmVjb3JkIi8+DQogICAgICA8L3hzOnNlcXVl
+bmNlPg0KICAgIDwveHM6Y29tcGxleFR5cGU+DQogIDwveHM6ZWxlbWVudD4NCiAgPHhzOmVsZW1l
+bnQgbmFtZT0icmVjb3JkIj4NCiAgICA8eHM6Y29tcGxleFR5cGU+DQogICAgICA8eHM6c2VxdWVu
+Y2U+DQogICAgICAgIDx4czplbGVtZW50IHJlZj0iaWQiLz4NCiAgICAgICAgPHhzOmVsZW1lbnQg
+cmVmPSJmaXJzdCIvPg0KICAgICAgICA8eHM6ZWxlbWVudCByZWY9Imxhc3QiLz4NCiAgICAgICAg
+PHhzOmVsZW1lbnQgcmVmPSJkYXRlT2ZCaXJ0aCIvPg0KICAgICAgPC94czpzZXF1ZW5jZT4NCiAg
+ICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8L3hzOmVsZW1lbnQ+DQogIDx4czplbGVtZW50IG5hbWU9
+ImlkIiB0eXBlPSJ4czppbnRlZ2VyIi8+DQogIDx4czplbGVtZW50IG5hbWU9ImZpcnN0IiB0eXBl
+PSJ4czpOQ05hbWUiLz4NCiAgPHhzOmVsZW1lbnQgbmFtZT0ibGFzdCIgdHlwZT0ieHM6TkNOYW1l
+Ii8+DQogIDx4czplbGVtZW50IG5hbWU9ImRhdGVPZkJpcnRoIiB0eXBlPSJ4czpzdHJpbmciLz4N
+CjwveHM6c2NoZW1hPg0K</list>
+  </attribute>
+</metadata>

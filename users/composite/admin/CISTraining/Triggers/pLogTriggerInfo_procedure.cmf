@@ -1,0 +1,107 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="pLogTriggerInfo" path="/users/composite/admin/CISTraining/Triggers/pLogTriggerInfo" type="PROCEDURE" subtype="SQL_SCRIPT_PROCEDURE" changeToken="0">
+  <parameters>
+    <parameter name="trCondition" direction="IN" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="256"/>
+    </parameter>
+  </parameters>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/lib/debug/Log" type="PROCEDURE">
+    <datatype type="PROCEDURE" refId="1">
+      <element name="textToLog" direction="IN">
+        <datatype referenceDefinitionSet="/lib/util/System" referenceType="MessageValue" type="STRING" maxLength="64000"/>
+      </element>
+    </datatype>
+  </dependency>
+  <dependency target="/lib/util/GetEnvironment" type="PROCEDURE">
+    <datatype type="PROCEDURE" refId="1">
+      <element name="variableName" direction="IN">
+        <datatype referenceDefinitionSet="/lib/util/System" referenceType="PropertyName" type="STRING" maxLength="255"/>
+      </element>
+      <element name="result" direction="OUT">
+        <datatype referenceDefinitionSet="/lib/util/System" referenceType="PropertyValue" type="STRING" maxLength="4096"/>
+      </element>
+    </datatype>
+  </dependency>
+  <dependency target="/lib/util/GetProperty" type="PROCEDURE">
+    <datatype type="PROCEDURE" refId="1">
+      <element name="property" direction="IN">
+        <datatype referenceDefinitionSet="/lib/util/System" referenceType="PropertyName" type="STRING" maxLength="255"/>
+      </element>
+      <element name="result" direction="OUT">
+        <datatype referenceDefinitionSet="/lib/util/System" referenceType="PropertyValue" type="STRING" maxLength="4096"/>
+      </element>
+    </datatype>
+  </dependency>
+  <dependency target="/lib/util/System" type="DEFINITION_SET">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <attribute name="Script" type="STRING">PROCEDURE pLogTriggerInfo(IN trCondition VARCHAR(256))
+BEGIN
+  	DECLARE dLocDate DATE DEFAULT CURRENT_DATE();
+	DECLARE dLocTime TIME DEFAULT CURRENT_TIME();
+	DECLARE jmsValue LONGVARCHAR;
+
+	DECLARE userName VARCHAR(256) DEFAULT &apos;Unknown User&apos;;
+	DECLARE userDomain VARCHAR(256) DEFAULT &apos;Unknown Domain&apos;;
+
+	-- Get the user and domain to attach to the message.  When invoked from a trigger it will use admin@composite.
+	CALL /lib/util/GetProperty(System.CURRENT_USER_NAME, userName);
+	CALL /lib/util/GetProperty(System.CURRENT_USER_DOMAIN, userDomain);
+
+	-- Retrieve the JMS message event
+	CALL /lib/util/GetEnvironment(System.TRIGGER_EVENT_VALUE, jmsValue);
+
+	CALL log(&apos;&lt;&apos; || userName || &apos;@&apos; || userDomain || &apos;&gt; &apos; ||
+					&apos;Detected trigger condition: &quot;&apos; || trCondition || &apos;&quot;  JMS value: &quot;&apos;||jmsValue||&apos;&quot;&apos;);
+END
+</attribute>
+  <attribute name="creationDate" type="LONG">1432669605475</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1492086688892</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="native_only" type="STRING">false</attribute>
+  <attribute name="references" type="MAP">
+    <item>
+      <key type="STRING">32/15</key>
+      <value type="STRING_ARRAY">
+        <item>lib</item>
+        <item>util</item>
+        <item>System</item>
+      </value>
+    </item>
+    <item>
+      <key type="STRING">7/17</key>
+      <value type="STRING_ARRAY">
+        <item>lib</item>
+        <item>debug</item>
+        <item>Log</item>
+      </value>
+    </item>
+    <item>
+      <key type="STRING">29/12</key>
+      <value type="STRING_ARRAY">
+        <item>lib</item>
+        <item>util</item>
+        <item>System</item>
+      </value>
+    </item>
+    <item>
+      <key type="STRING">29/11</key>
+      <value type="STRING_ARRAY">
+        <item>lib</item>
+        <item>util</item>
+        <item>System</item>
+      </value>
+    </item>
+  </attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1432669605475</attribute>
+</metadata>
