@@ -1,0 +1,576 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="TVM" path="/users/composite/admin/CISTraining/Physical/Metadata/TDExpress/DBC/TVM" type="TABLE" subtype="DATABASE_TABLE" changeToken="0" tableType="TABLE">
+  <annotation>Contains one row for each table, view, trigger, stored procedure, join index, hash index, macro, user-defined type, user-defined method, user-defined function, external stored procedure, and JAR in the system.</annotation>
+  <columns>
+    <column name="DatabaseId" nullable="false">
+      <datatype name="byte" extendedName="byte(4)" subType="DATASOURCE_TYPE" type="BINARY" minLength="4" maxLength="4"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the identifier of the database or user.</annotation>
+    </column>
+    <column name="TVMNameI" nullable="false">
+      <datatype name="varchar" extendedName="varchar(128)" subType="DATASOURCE_TYPE" type="STRING" maxLength="128"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the name of the table in upper case.</annotation>
+    </column>
+    <column name="LogicalHostId" nullable="true">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns a unique identifier of the logon source for the logged query. A value of zero indicates an internal session.</annotation>
+    </column>
+    <column name="SessionNo" nullable="true">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the session identifier assigned to the session by the TDP or LAN interface.</annotation>
+    </column>
+    <column name="TVMId" nullable="false">
+      <datatype name="byte" extendedName="byte(6)" subType="DATASOURCE_TYPE" type="BINARY" minLength="6" maxLength="6"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the internal ID of the table.</annotation>
+    </column>
+    <column name="TableKind" nullable="false">
+      <datatype name="varchar" extendedName="varchar(5)" subType="DATASOURCE_TYPE" type="STRING" maxLength="5"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the type of table.</annotation>
+    </column>
+    <column name="ProtectionType" nullable="false">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>ProtectionType indicates whether the tables in the database are protected by the FallBack option.</annotation>
+    </column>
+    <column name="TempFlag" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>When an object is first created, this flag is set to I. When any grant is performed on the object, it is changed to N.</annotation>
+    </column>
+    <column name="HashFlag" nullable="false">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>HashFlag indicates the hash flag.</annotation>
+    </column>
+    <column name="NextIndexId" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Stores information about the next system-generated unique identification number available for use by the system to assign for an Index with in a table.</annotation>
+    </column>
+    <column name="NextFieldId" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Stores information about the next system-generated unique identification number available for use by the system to assign for FieldId with in a table.</annotation>
+    </column>
+    <column name="Version" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the version count, which is incremented each time the table is altered with a data definition statement.</annotation>
+    </column>
+    <column name="RequestText" nullable="true">
+      <datatype name="varchar" extendedName="varchar(12500)" subType="DATASOURCE_TYPE" type="STRING" maxLength="12500"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the text of the most recent data definition statement that was used to change the table, view,join index, trigger, macro, user-defined types, user-defined methods, or user defined function.</annotation>
+    </column>
+    <column name="CreateText" nullable="true">
+      <datatype name="varchar" extendedName="varchar(13000)" subType="DATASOURCE_TYPE" type="STRING" maxLength="13000"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the resolved text of the query.</annotation>
+    </column>
+    <column name="CommentString" nullable="true">
+      <datatype name="varchar" extendedName="varchar(255)" subType="DATASOURCE_TYPE" type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns user-supplied text or commentary on the column, database, table, view, macro, user-defined function, user-defined types, user-defined methods, stored procedure, role, profile, or user.</annotation>
+    </column>
+    <column name="CreatorName" nullable="false">
+      <datatype name="varchar" extendedName="varchar(128)" subType="DATASOURCE_TYPE" type="STRING" maxLength="128"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the name of the creator.</annotation>
+    </column>
+    <column name="TVMName" nullable="false">
+      <datatype name="varchar" extendedName="varchar(128)" subType="DATASOURCE_TYPE" type="STRING" maxLength="128"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the name of the table.</annotation>
+    </column>
+    <column name="JournalFlag" nullable="false">
+      <datatype name="char" extendedName="char(2)" subType="DATASOURCE_TYPE" type="STRING" minLength="2" maxLength="2"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>JournalFlag indicates the journaling in effect for the table, or the journal default for the tables in the user space or in the database.</annotation>
+    </column>
+    <column name="JournalId" nullable="true">
+      <datatype name="byte" extendedName="byte(6)" subType="DATASOURCE_TYPE" type="BINARY" minLength="6" maxLength="6"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the id of the journal table.</annotation>
+    </column>
+    <column name="UtilVersion" nullable="true">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the utility version count. This column is modified to match the Version column when a significant change of the table definition occurs that would prohibit an incremental restore or copy of an archive.</annotation>
+    </column>
+    <column name="AccLogRules" nullable="false">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Shows the rules generated.</annotation>
+    </column>
+    <column name="ColumnAccRules" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>ColumnAccRules is the number of access logging rules.</annotation>
+    </column>
+    <column name="CheckOpt" nullable="false">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>CheckOpt indicates whether or not the table allows duplicate rows.</annotation>
+    </column>
+    <column name="ParentCount" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the number of parent tables for the table .</annotation>
+    </column>
+    <column name="ChildCount" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the count of the referencing tables for the table. For stored procedures and external stored procedures, this field stores the number of result sets.</annotation>
+    </column>
+    <column name="NamedTblCheckCount" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the count of named table-level check constraint for the table.</annotation>
+    </column>
+    <column name="UnnamedTblCheckExist" nullable="false">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>UnnamedTblCheckExist indicates whether the table has an unnamed table-level check constraint.</annotation>
+    </column>
+    <column name="PrimaryKeyIndexId" nullable="true">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>TVM.PrimaryKeyIndexId identifies the Primary Key index Id for the table. It is NULL if table does not have a Primary Key.</annotation>
+    </column>
+    <column name="CreateUID" nullable="true">
+      <datatype name="byte" extendedName="byte(4)" subType="DATASOURCE_TYPE" type="BINARY" minLength="4" maxLength="4"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the user id of the creator of the TVM.</annotation>
+    </column>
+    <column name="CreateTimeStamp" nullable="true">
+      <datatype name="timestamp" extendedName="timestamp" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the date and time that the object in the row was created.</annotation>
+    </column>
+    <column name="LastAlterUID" nullable="true">
+      <datatype name="byte" extendedName="byte(4)" subType="DATASOURCE_TYPE" type="BINARY" minLength="4" maxLength="4"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the user ID who last altered the row.</annotation>
+    </column>
+    <column name="LastAlterTimeStamp" nullable="true">
+      <datatype name="timestamp" extendedName="timestamp" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the time the row was last updated.</annotation>
+    </column>
+    <column name="TriggerCount" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the number of triggers defined on this table.</annotation>
+    </column>
+    <column name="CommitOpt" nullable="false">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>specifies the ON COMMIT option for a temporary table. Value P stands for ON COMMIT PRESERVE ROWS. Value D stands for ON COMMIT DELETE ROWS. Value N indicates the object is not a temporary table.</annotation>
+    </column>
+    <column name="TransLog" nullable="false">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Specifies whether transaction journals are generated.</annotation>
+    </column>
+    <column name="LastAccessTimeStamp" nullable="true">
+      <datatype name="timestamp" extendedName="timestamp" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the time that the corresponding object was last accessed.</annotation>
+    </column>
+    <column name="AccessCount" nullable="true">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the access count for the corresponding database object.</annotation>
+    </column>
+    <column name="SPObjectCodeRows" nullable="false">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>A 10-digit integer. Each digit represents one specific stored procedure attribute.</annotation>
+    </column>
+    <column name="RSGroupID" nullable="true">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>RSGroupID is the replicated group identifier.</annotation>
+    </column>
+    <column name="TblRole" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>These are the possible values: C = if a capture option is active or  A = if an apply operation is active or NULL.</annotation>
+    </column>
+    <column name="TblStatus" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Status of the table.</annotation>
+    </column>
+    <column name="RequestTxtOverflow" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>identifies that the Request Text for the object has overflown .</annotation>
+    </column>
+    <column name="CreateTxtOverflow" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Identifies that the CreateText for the object overflowed .</annotation>
+    </column>
+    <column name="QueueFlag" nullable="false">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Stores the queuing option for the table from the values: Y = Yes (queuing option is set), N = No (queuing option is not set).</annotation>
+    </column>
+    <column name="XSPExternalName" nullable="true">
+      <datatype name="char" extendedName="char(30)" subType="DATASOURCE_TYPE" type="STRING" minLength="30" maxLength="30"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the external name associated with an external routine.</annotation>
+    </column>
+    <column name="XSPOptions" nullable="true">
+      <datatype name="char" extendedName="char(5)" subType="DATASOURCE_TYPE" type="STRING" minLength="5" maxLength="5"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>This field is composed of 3 different XSP options, with each character representing one option.</annotation>
+    </column>
+    <column name="XSPExtFileReference" nullable="true">
+      <datatype name="varchar" extendedName="varchar(1000)" subType="DATASOURCE_TYPE" type="STRING" maxLength="1000"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the source code location for the external routine.</annotation>
+    </column>
+    <column name="ExecProtectionMode" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>ExecProtectionMode indicates the execution protection mode.</annotation>
+    </column>
+    <column name="CharacterType" nullable="true">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the character type that was the default when the function or External Stored Procedure was created.</annotation>
+    </column>
+    <column name="Platform" nullable="true">
+      <datatype name="char" extendedName="char(8)" subType="DATASOURCE_TYPE" type="STRING" minLength="8" maxLength="8"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the platform of the system on which the object is compiled. It also indicates whether a function object is valid or compatible with the current platform.</annotation>
+    </column>
+    <column name="AuthIdUsed" nullable="true">
+      <datatype name="byte" extendedName="byte(6)" subType="DATASOURCE_TYPE" type="BINARY" minLength="6" maxLength="6"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the identifier of the authorization being used for the External Stored Procedure or User Defined Function.</annotation>
+    </column>
+    <column name="AuthorizationType" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the type of authorization.</annotation>
+    </column>
+    <column name="AuthorizationSubType" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Specifies whether the authorization is a default authorization.</annotation>
+    </column>
+    <column name="OSDomainName" nullable="true">
+      <datatype name="varchar" extendedName="varchar(256)" subType="DATASOURCE_TYPE" type="STRING" maxLength="256"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the domain that the user belongs to.</annotation>
+    </column>
+    <column name="OSUserName" nullable="true">
+      <datatype name="varchar" extendedName="varchar(256)" subType="DATASOURCE_TYPE" type="STRING" maxLength="256"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the OS user name.</annotation>
+    </column>
+    <column name="SecInfo" nullable="true">
+      <datatype name="varbyte" extendedName="varbyte(256)" subType="DATASOURCE_TYPE" type="BINARY" maxLength="256"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the encrypted password for an authorization object.</annotation>
+    </column>
+    <column name="AuthName" nullable="true">
+      <datatype name="varchar" extendedName="varchar(128)" subType="DATASOURCE_TYPE" type="STRING" maxLength="128"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the authorization name specified in the external security clause of the user defined function or external stored procedure.</annotation>
+    </column>
+    <column name="TemporalProperty" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>TemporalProperty indicates whether the table/view/join index is a nontemporal, ValidTime, TransactionTime, or bi-temporal table.</annotation>
+    </column>
+    <column name="ResolvedCurrent_Date" nullable="true">
+      <datatype name="date" extendedName="date" subType="DATASOURCE_TYPE" type="DATE"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>If the object is a join index or a table that is defined using DATE or CURRENT_DATE, this is the last reconciled date. Either the partition, JI definition, or temporal table has a system defined join index.NULL in all other cases.</annotation>
+    </column>
+    <column name="ResolvedCurrent_Timestamp" nullable="true">
+      <datatype name="timestamp with zone" extendedName="timestamp with zone(32)" subType="DATASOURCE_TYPE" type="STRING" maxLength="32"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>If the object is a join index or a table that is defined using CURRENT_TIMESTAMP, this is the last reconciled timestamp. Either the partition, JI definition, or temporal table has a system-defined join index.NULL in all other cases.</annotation>
+    </column>
+    <column name="SystemDefinedJI" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Records whether a join index is system-defined or user-defined.</annotation>
+    </column>
+    <column name="VTQualifier" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>records the temporal qualifier for validtime dimension. NULL indicates that there isno ValidTime Dimension, C indicates Current ValidTime,S indicates Sequenced ValidTime, N indicates Non-Sequenced ValidTime.</annotation>
+    </column>
+    <column name="TTQualifier" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>records the temporal qualifier for TransactionTime dimension. NULL is no TransactionTime Dimension, C is Current TransactionTime, S is Sequenced TransactionTime, N is Non-Sequenced TransactionTime.</annotation>
+    </column>
+    <column name="MACFlag" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>MACFlag indicates whether the table is protected by row-level security (Y) or is not protected (N or NULL).</annotation>
+    </column>
+    <column name="PIColumnCount" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>TVM.PIColumnCount is the number of columns in the primary index or primary AMP index (otherwise, 0).</annotation>
+    </column>
+    <column name="PartitioningLevels" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>TVM.PartitioningLevels indicates the number of partitioning levels (a value between 1 and 62, inclusive) or no partitioning (a value of 0).</annotation>
+    </column>
+    <column name="NetCompression" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="NetConfidentiality" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="NetPolicyLevel" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="SDInfo" nullable="true">
+      <datatype name="varbyte" extendedName="varbyte(256)" subType="DATASOURCE_TYPE" type="BINARY" maxLength="256"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="LoadProperty" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>LoadProperty is NULL for non-LDI objects. For LDI tables, &quot;I&quot; indicates concurrent Load Isolation for only INSERTs, &quot;A&quot; for ALL DMLs, &quot;D&quot; for temporarily disabled and &quot;S&quot; for system determined for a join index defined on a LDI table.</annotation>
+    </column>
+    <column name="ExtraField4" nullable="true">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="LoadIdLayout" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>LoadIdLayout indicates the RowLoadID layout type of the table. It is set to NULL for non-LDI objects, &quot;R&quot; when RowLoadID is recorded in the row along with the other columns and &quot;C&quot; when RowLoadID is recorded in a column partition.</annotation>
+    </column>
+    <column name="DelayedJI" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>DelayedJI is set to NULL for non-join index entries and set to a not-null value when a JI is declared for delayed JI maintenance.</annotation>
+    </column>
+    <column name="ExtraField1" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="ExtraField2" nullable="true">
+      <datatype name="byte" extendedName="byte(4)" subType="DATASOURCE_TYPE" type="BINARY" minLength="4" maxLength="4"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="ExtraField3" nullable="true">
+      <datatype name="varchar" extendedName="varchar(256)" subType="DATASOURCE_TYPE" type="STRING" maxLength="256"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="CurrentLoadId" nullable="true">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>CurrentLoadId indicates the CurrLoadID of the LDI table/join index. It is NULL for non-LDI objects.</annotation>
+    </column>
+    <column name="ExtraField5" nullable="true">
+      <datatype name="float" extendedName="float" subType="DATASOURCE_TYPE" type="FLOAT"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes>
+    <index name="TVM_Index1" type="SYSTEM" unique="true">
+      <indexColumn name="DatabaseId" sortOrder="ASCENDING"/>
+      <indexColumn name="TVMNameI" sortOrder="ASCENDING"/>
+    </index>
+    <index name="TVM_Index4" type="OTHER" unique="true">
+      <indexColumn name="TVMId" sortOrder="ASCENDING"/>
+    </index>
+    <index name="TVM_Index8" type="OTHER" unique="false">
+      <indexColumn name="TVMName" sortOrder="ASCENDING"/>
+    </index>
+  </indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="creationDate" type="LONG">1487347500257</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="datatype_format" type="STRING">----,---,---,---,--9</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1487347500257</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1487347500257</attribute>
+</metadata>

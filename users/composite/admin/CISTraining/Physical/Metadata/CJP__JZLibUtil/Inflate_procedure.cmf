@@ -1,0 +1,25 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="Inflate" path="/users/composite/admin/CISTraining/Physical/Metadata/CJP_JZLibUtil/Inflate" type="PROCEDURE" subtype="CUSTOM_PROCEDURE" changeToken="0">
+  <parameters>
+    <parameter name="inputBlob" direction="IN" nullable="true">
+      <datatype name="BLOB" subType="DATASOURCE_TYPE" type="BLOB" maxLength="2147483647"/>
+    </parameter>
+    <parameter name="outputString" direction="OUT" nullable="true">
+      <datatype name="LONGVARCHAR" subType="DATASOURCE_TYPE" type="STRING" maxLength="2147483647"/>
+    </parameter>
+  </parameters>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="className" type="STRING">com.compositesw.ps.cjp.JZlib_Inflate</attribute>
+  <attribute name="creationDate" type="LONG">1505318881726</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1505319037415</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1505318881726</attribute>
+  <attribute name="selectionState" type="INTEGER">2</attribute>
+</metadata>

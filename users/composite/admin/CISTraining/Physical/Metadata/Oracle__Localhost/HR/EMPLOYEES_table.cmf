@@ -1,0 +1,133 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="EMPLOYEES" path="/users/composite/admin/CISTraining/Physical/Metadata/Oracle_Localhost/HR/EMPLOYEES" type="TABLE" subtype="DATABASE_TABLE" changeToken="0" tableType="TABLE">
+  <columns>
+    <column name="EMPLOYEE_ID" nullable="false">
+      <datatype name="INTEGER" extendedName="NUMBER(6,0)" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-999999" maxValue="999999"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="FIRST_NAME" nullable="true">
+      <datatype name="VARCHAR2" extendedName="VARCHAR2(20)" subType="DATASOURCE_TYPE" type="STRING" maxLength="20"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="LAST_NAME" nullable="false">
+      <datatype name="VARCHAR2" extendedName="VARCHAR2(25)" subType="DATASOURCE_TYPE" type="STRING" maxLength="25"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="EMAIL" nullable="false">
+      <datatype name="VARCHAR2" extendedName="VARCHAR2(25)" subType="DATASOURCE_TYPE" type="STRING" maxLength="25"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="PHONE_NUMBER" nullable="true">
+      <datatype name="VARCHAR2" extendedName="VARCHAR2(20)" subType="DATASOURCE_TYPE" type="STRING" maxLength="20"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="HIRE_DATE" nullable="false">
+      <datatype name="DATE" extendedName="DATE" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="JOB_ID" nullable="false">
+      <datatype name="VARCHAR2" extendedName="VARCHAR2(10)" subType="DATASOURCE_TYPE" type="STRING" maxLength="10"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="SALARY" nullable="true">
+      <datatype name="NUMBER" extendedName="NUMBER(8,2)" subType="DATASOURCE_TYPE" type="DECIMAL" maxDigits="8" maxFractionalDigits="2"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="COMMISSION_PCT" nullable="true">
+      <datatype name="NUMBER" extendedName="NUMBER(2,2)" subType="DATASOURCE_TYPE" type="DECIMAL" maxDigits="2" maxFractionalDigits="2"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="MANAGER_ID" nullable="true">
+      <datatype name="INTEGER" extendedName="NUMBER(6,0)" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-999999" maxValue="999999"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="DEPARTMENT_ID" nullable="true">
+      <datatype name="SMALLINT" extendedName="NUMBER(4,0)" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-9999" maxValue="9999"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes>
+    <index name="EMP_EMAIL_UK" type="OTHER" unique="true">
+      <indexColumn name="EMAIL" sortOrder="ASCENDING"/>
+      <attribute name="indexSchema" type="STRING">HR</attribute>
+    </index>
+    <index name="EMP_EMP_ID_PK" type="PRIMARY_KEY" unique="true">
+      <indexColumn name="EMPLOYEE_ID" sortOrder="ASCENDING"/>
+      <attribute name="indexSchema" type="STRING">HR</attribute>
+    </index>
+    <index name="EMP_DEPARTMENT_IX" type="OTHER" unique="false">
+      <indexColumn name="DEPARTMENT_ID" sortOrder="ASCENDING"/>
+      <attribute name="indexSchema" type="STRING">HR</attribute>
+    </index>
+    <index name="EMP_JOB_IX" type="OTHER" unique="false">
+      <indexColumn name="JOB_ID" sortOrder="ASCENDING"/>
+      <attribute name="indexSchema" type="STRING">HR</attribute>
+    </index>
+    <index name="EMP_MANAGER_IX" type="OTHER" unique="false">
+      <indexColumn name="MANAGER_ID" sortOrder="ASCENDING"/>
+      <attribute name="indexSchema" type="STRING">HR</attribute>
+    </index>
+    <index name="EMP_NAME_IX" type="OTHER" unique="false">
+      <indexColumn name="LAST_NAME" sortOrder="ASCENDING"/>
+      <indexColumn name="FIRST_NAME" sortOrder="ASCENDING"/>
+      <attribute name="indexSchema" type="STRING">HR</attribute>
+    </index>
+  </indexes>
+  <foreignKeys>
+    <foreignKey name="EMP_MANAGER_FK" primaryKeyName="EMP_EMP_ID_PK" primaryKeyTableName="/users/composite/admin/CISTraining/Physical/Metadata/Oracle_Localhost/HR/EMPLOYEES">
+      <foreignKeyColumn primaryColumnName="EMPLOYEE_ID" foreignColumnName="MANAGER_ID"/>
+    </foreignKey>
+    <foreignKey name="EMP_DEPT_FK" primaryKeyName="DEPT_ID_PK" primaryKeyTableName="/users/composite/admin/CISTraining/Physical/Metadata/Oracle_Localhost/HR/DEPARTMENTS">
+      <foreignKeyColumn primaryColumnName="DEPARTMENT_ID" foreignColumnName="DEPARTMENT_ID"/>
+    </foreignKey>
+    <foreignKey name="EMP_JOB_FK" primaryKeyName="JOB_ID_PK" primaryKeyTableName="/users/composite/admin/CISTraining/Physical/Metadata/Oracle_Localhost/HR/JOBS">
+      <foreignKeyColumn primaryColumnName="JOB_ID" foreignColumnName="JOB_ID"/>
+    </foreignKey>
+  </foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/users/composite/admin/CISTraining/Physical/Metadata/Oracle_Localhost/HR/DEPARTMENTS" type="TABLE">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <dependency target="/users/composite/admin/CISTraining/Physical/Metadata/Oracle_Localhost/HR/JOBS" type="TABLE">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <attribute name="creationDate" type="LONG">1486571334322</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="i:0:indexSchema" type="STRING">HR</attribute>
+  <attribute name="i:1:indexSchema" type="STRING">HR</attribute>
+  <attribute name="i:2:indexSchema" type="STRING">HR</attribute>
+  <attribute name="i:3:indexSchema" type="STRING">HR</attribute>
+  <attribute name="i:4:indexSchema" type="STRING">HR</attribute>
+  <attribute name="i:5:indexSchema" type="STRING">HR</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1487346126922</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1486571334322</attribute>
+</metadata>

@@ -1,0 +1,488 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="Dbase" path="/users/composite/admin/CISTraining/Physical/Metadata/TDExpress/DBC/Dbase" type="TABLE" subtype="DATABASE_TABLE" changeToken="0" tableType="TABLE">
+  <annotation>Contains a row for each database and user in the system.</annotation>
+  <columns>
+    <column name="DatabaseNameI" nullable="false">
+      <datatype name="varchar" extendedName="varchar(128)" subType="DATASOURCE_TYPE" type="STRING" maxLength="128"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the name of the database in upper case.</annotation>
+    </column>
+    <column name="DatabaseId" nullable="false">
+      <datatype name="byte" extendedName="byte(4)" subType="DATASOURCE_TYPE" type="BINARY" minLength="4" maxLength="4"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the unique identifier of the database.</annotation>
+    </column>
+    <column name="OwnerId" nullable="false">
+      <datatype name="byte" extendedName="byte(4)" subType="DATASOURCE_TYPE" type="BINARY" minLength="4" maxLength="4"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the unique identifier of the database owner.</annotation>
+    </column>
+    <column name="EncryptionFlag" nullable="true">
+      <datatype name="byte" extendedName="byte(1)" subType="DATASOURCE_TYPE" type="BINARY" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Identifies whether the password is encrypted by DES or SHA-256.</annotation>
+    </column>
+    <column name="PasswordSalt" nullable="true">
+      <datatype name="byte" extendedName="byte(2)" subType="DATASOURCE_TYPE" type="BINARY" minLength="2" maxLength="2"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>SHA Standard seed needed to encrypt the password.</annotation>
+    </column>
+    <column name="EncryptedPassword" nullable="true">
+      <datatype name="varbyte" extendedName="varbyte(512)" subType="DATASOURCE_TYPE" type="BINARY" maxLength="512"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the one-way encrypted form of the userNULLs password.</annotation>
+    </column>
+    <column name="PasswordModTime" nullable="true">
+      <datatype name="timestamp" extendedName="timestamp" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the time and date of the last time the password was modified.</annotation>
+    </column>
+    <column name="ProtectionType" nullable="false">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>ProtectionType indicates whether the tables in the database are protected by the FallBack option.</annotation>
+    </column>
+    <column name="JournalFlag" nullable="false">
+      <datatype name="char" extendedName="char(2)" subType="DATASOURCE_TYPE" type="STRING" minLength="2" maxLength="2"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>JournalFlag indicates the journaling in effect for the table, or the journal default for the tables in the user space or in the database.</annotation>
+    </column>
+    <column name="PermSpace" nullable="false">
+      <datatype name="float" extendedName="float" subType="DATASOURCE_TYPE" type="FLOAT"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the total space allocated to the database on all AMPs.</annotation>
+    </column>
+    <column name="SpoolSpace" nullable="false">
+      <datatype name="float" extendedName="float" subType="DATASOURCE_TYPE" type="FLOAT"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>An integer that indicates the maximum spool space allowed for the database. SpoolSpace is 0 if DatabaseName is PUBLIC.</annotation>
+    </column>
+    <column name="StartupString" nullable="true">
+      <datatype name="varchar" extendedName="varchar(255)" subType="DATASOURCE_TYPE" type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the startup string (macro or SQL statement) specified for the user.</annotation>
+    </column>
+    <column name="CommentString" nullable="true">
+      <datatype name="varchar" extendedName="varchar(255)" subType="DATASOURCE_TYPE" type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns user-supplied text or commentary on the column, database, table, view, macro, user-defined function, user-defined types, user-defined methods, stored procedure, role, profile, or user.</annotation>
+    </column>
+    <column name="AccountName" nullable="false">
+      <datatype name="varchar" extendedName="varchar(128)" subType="DATASOURCE_TYPE" type="STRING" maxLength="128"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>AccountName is the unexpanded default account name for the user or database.</annotation>
+    </column>
+    <column name="CreatorName" nullable="false">
+      <datatype name="varchar" extendedName="varchar(128)" subType="DATASOURCE_TYPE" type="STRING" maxLength="128"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Either the name of the user who created the database or table, or the name of the creator.</annotation>
+    </column>
+    <column name="DatabaseName" nullable="false">
+      <datatype name="varchar" extendedName="varchar(128)" subType="DATASOURCE_TYPE" type="STRING" maxLength="128"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the name of the database.</annotation>
+    </column>
+    <column name="JournalId" nullable="true">
+      <datatype name="byte" extendedName="byte(6)" subType="DATASOURCE_TYPE" type="BINARY" minLength="6" maxLength="6"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the id of the journal table.</annotation>
+    </column>
+    <column name="Version" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the version count, which is incremented each time the database/user is altered with a data definition statement.</annotation>
+    </column>
+    <column name="OwnerName" nullable="false">
+      <datatype name="varchar" extendedName="varchar(128)" subType="DATASOURCE_TYPE" type="STRING" maxLength="128"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the name of the database owner.</annotation>
+    </column>
+    <column name="NumFallBackTables" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns total number of fallback tables created in a database.</annotation>
+    </column>
+    <column name="NumLogProtTables" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns total number of log tables created in a database.</annotation>
+    </column>
+    <column name="DefaultDataBase" nullable="true">
+      <datatype name="varchar" extendedName="varchar(128)" subType="DATASOURCE_TYPE" type="STRING" maxLength="128"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the name of the current default database for the user.</annotation>
+    </column>
+    <column name="LogonRules" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Reports logon rules that have been generated for username/hostid pairs as a result of successfully executed GRANT LOGON and REVOKE LOGON statements.</annotation>
+    </column>
+    <column name="AccLogRules" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Shows the rules generated.</annotation>
+    </column>
+    <column name="AccLogUsrRules" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Indicates if access logging rule is enabled for the user.</annotation>
+    </column>
+    <column name="DefaultCollation" nullable="false">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the default collation for the user as defined in a CREATE/MODIFY USER statement; if not defined, the DefaultCollation is the collation of the logon client system.</annotation>
+    </column>
+    <column name="RowType" nullable="false">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the kind of information in this row.</annotation>
+    </column>
+    <column name="PasswordChgDate" nullable="true">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the Julian date on which the current password was assigned to the user. This value is 0 for a new user.</annotation>
+    </column>
+    <column name="LockedDate" nullable="true">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the Julian date on which the Dbase row was locked to logons due to excessive erroneous passwords. A NULL or a value of 0 indicates the row was never locked.</annotation>
+    </column>
+    <column name="LockedTime" nullable="true">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the time (number of minutes after midnight) when the Dbase row was locked to logons due to excessive erroneous passwords.</annotation>
+    </column>
+    <column name="LockedCount" nullable="true">
+      <datatype name="byteint" extendedName="byteint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-128" maxValue="127"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the number of successive unsuccessful attempts to log on with an erroneous password. NULL or zero (no attempts).</annotation>
+    </column>
+    <column name="UnResolvedRICount" nullable="false">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the total number of unresolved Referential Integrity (RI) constraints in the database.</annotation>
+    </column>
+    <column name="TimeZoneHour" nullable="true">
+      <datatype name="byteint" extendedName="byteint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-128" maxValue="127"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the format of the time zone as signed integer values from -12:59 to +13:00.</annotation>
+    </column>
+    <column name="TimeZoneMinute" nullable="true">
+      <datatype name="byteint" extendedName="byteint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-128" maxValue="127"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the format of the time zone as signed integer values from -12:59 to +13:00.</annotation>
+    </column>
+    <column name="DefaultDateForm" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Either an INTEGERDATE or ANSIDATE that is set for a USER with the CREATE or MODIFY statement.</annotation>
+    </column>
+    <column name="CreateUID" nullable="true">
+      <datatype name="byte" extendedName="byte(4)" subType="DATASOURCE_TYPE" type="BINARY" minLength="4" maxLength="4"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The CreateUID column contains the user id of the database/user creator.</annotation>
+    </column>
+    <column name="CreateTimeStamp" nullable="true">
+      <datatype name="timestamp" extendedName="timestamp" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the date and time that the object in the row was created.</annotation>
+    </column>
+    <column name="LastAlterUID" nullable="true">
+      <datatype name="byte" extendedName="byte(4)" subType="DATASOURCE_TYPE" type="BINARY" minLength="4" maxLength="4"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the user ID who last altered the row.</annotation>
+    </column>
+    <column name="LastAlterTimeStamp" nullable="true">
+      <datatype name="timestamp" extendedName="timestamp" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the time the row was last updated.</annotation>
+    </column>
+    <column name="TempSpace" nullable="false">
+      <datatype name="float" extendedName="float" subType="DATASOURCE_TYPE" type="FLOAT"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the maximum temporary space allocated for a database, profile, or user in bytes.</annotation>
+    </column>
+    <column name="LastAccessTimeStamp" nullable="true">
+      <datatype name="timestamp" extendedName="timestamp" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the time that the corresponding object was last accessed.</annotation>
+    </column>
+    <column name="AccessCount" nullable="true">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the access count for the corresponding database object.</annotation>
+    </column>
+    <column name="DefaultCharType" nullable="true">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the type of the user default character type.</annotation>
+    </column>
+    <column name="RoleName" nullable="true">
+      <datatype name="varchar" extendedName="varchar(128)" subType="DATASOURCE_TYPE" type="STRING" maxLength="128"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the name of a role.</annotation>
+    </column>
+    <column name="ProfileName" nullable="true">
+      <datatype name="varchar" extendedName="varchar(128)" subType="DATASOURCE_TYPE" type="STRING" maxLength="128"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the name of the profile.</annotation>
+    </column>
+    <column name="UDFLibRevision" nullable="false">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>UDFLibRevision  keeps track of the current UDF library revision number of the database. This revision number is incremented when a function in the database is created, replaced, altered or dropped.</annotation>
+    </column>
+    <column name="AppCat1Revision" nullable="false">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the current library revision number of the CLI application for a database.</annotation>
+    </column>
+    <column name="AppCat2Revision" nullable="false">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the current library revision number of the ODBC application for a database.</annotation>
+    </column>
+    <column name="AppCat3Revision" nullable="false">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the current library revision number of the JAVA application for a database.</annotation>
+    </column>
+    <column name="AppCat4Revision" nullable="false">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the current library revision number of the NET application for a database.</annotation>
+    </column>
+    <column name="JarLibRevision" nullable="false">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Functions in a similar way to the existing UDFLibRevision column for UDFs, UDMs, UDTs and XSPs.</annotation>
+    </column>
+    <column name="TimeZoneString" nullable="true">
+      <datatype name="varchar" extendedName="varchar(128)" subType="DATASOURCE_TYPE" type="STRING" maxLength="128"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>This field is reserved for future use.</annotation>
+    </column>
+    <column name="CalendarName" nullable="false">
+      <datatype name="varchar" extendedName="varchar(128)" subType="DATASOURCE_TYPE" type="STRING" maxLength="128"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the name of the active business calendar.</annotation>
+    </column>
+    <column name="ExportDefinitionName" nullable="true">
+      <datatype name="varchar" extendedName="varchar(30)" subType="DATASOURCE_TYPE" type="STRING" maxLength="30"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the name of the export width definition assigned to the user.</annotation>
+    </column>
+    <column name="ExportWidthRuleSet" nullable="true">
+      <datatype name="byte" extendedName="byte(20)" subType="DATASOURCE_TYPE" type="BINARY" minLength="20" maxLength="20"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the export width rule set for the current export width definitions.</annotation>
+    </column>
+    <column name="NetCompression" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="NetConfidentiality" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="NetPolicyLevel" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="ZoneID" nullable="false">
+      <datatype name="byte" extendedName="byte(4)" subType="DATASOURCE_TYPE" type="BINARY" minLength="4" maxLength="4"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the unique identifier of the zone, the database belongs to.</annotation>
+    </column>
+    <column name="DBA" nullable="false">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Indicates if the user is created as DBA or not. Not valid for database.</annotation>
+    </column>
+    <column name="ExtraField1" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="ExtraField2" nullable="true">
+      <datatype name="byte" extendedName="byte(4)" subType="DATASOURCE_TYPE" type="BINARY" minLength="4" maxLength="4"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="ExtraField3" nullable="true">
+      <datatype name="varchar" extendedName="varchar(256)" subType="DATASOURCE_TYPE" type="STRING" maxLength="256"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="ExtraField4" nullable="true">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="ExtraField5" nullable="true">
+      <datatype name="float" extendedName="float" subType="DATASOURCE_TYPE" type="FLOAT"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="GPLLibRevision" nullable="false">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="NewFlag" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>True when user/db is created, set to false when user/db is explicitly granted an access privilege.</annotation>
+    </column>
+  </columns>
+  <indexes>
+    <index name="Dbase_Index1" type="SYSTEM" unique="true">
+      <indexColumn name="DatabaseNameI" sortOrder="ASCENDING"/>
+    </index>
+    <index name="Dbase_Index4" type="OTHER" unique="true">
+      <indexColumn name="DatabaseId" sortOrder="ASCENDING"/>
+    </index>
+  </indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="creationDate" type="LONG">1487186367512</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="datatype_format" type="STRING">X(1)</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1487186367512</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1487186367512</attribute>
+</metadata>

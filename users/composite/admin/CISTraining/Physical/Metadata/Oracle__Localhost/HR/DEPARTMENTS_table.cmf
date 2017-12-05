@@ -1,0 +1,67 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="DEPARTMENTS" path="/users/composite/admin/CISTraining/Physical/Metadata/Oracle_Localhost/HR/DEPARTMENTS" type="TABLE" subtype="DATABASE_TABLE" changeToken="0" tableType="TABLE">
+  <columns>
+    <column name="DEPARTMENT_ID" nullable="false">
+      <datatype name="SMALLINT" extendedName="NUMBER(4,0)" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-9999" maxValue="9999"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="DEPARTMENT_NAME" nullable="false">
+      <datatype name="VARCHAR2" extendedName="VARCHAR2(30)" subType="DATASOURCE_TYPE" type="STRING" maxLength="30"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="MANAGER_ID" nullable="true">
+      <datatype name="INTEGER" extendedName="NUMBER(6,0)" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-999999" maxValue="999999"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="LOCATION_ID" nullable="true">
+      <datatype name="SMALLINT" extendedName="NUMBER(4,0)" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-9999" maxValue="9999"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes>
+    <index name="DEPT_ID_PK" type="PRIMARY_KEY" unique="true">
+      <indexColumn name="DEPARTMENT_ID" sortOrder="ASCENDING"/>
+      <attribute name="indexSchema" type="STRING">HR</attribute>
+    </index>
+    <index name="DEPT_LOCATION_IX" type="OTHER" unique="false">
+      <indexColumn name="LOCATION_ID" sortOrder="ASCENDING"/>
+      <attribute name="indexSchema" type="STRING">HR</attribute>
+    </index>
+  </indexes>
+  <foreignKeys>
+    <foreignKey name="DEPT_MGR_FK" primaryKeyName="EMP_EMP_ID_PK" primaryKeyTableName="/users/composite/admin/CISTraining/Physical/Metadata/Oracle_Localhost/HR/EMPLOYEES">
+      <foreignKeyColumn primaryColumnName="EMPLOYEE_ID" foreignColumnName="MANAGER_ID"/>
+    </foreignKey>
+    <foreignKey name="DEPT_LOC_FK" primaryKeyName="LOC_ID_PK" primaryKeyTableName="/users/composite/admin/CISTraining/Physical/Metadata/Oracle_Localhost/HR/LOCATIONS">
+      <foreignKeyColumn primaryColumnName="LOCATION_ID" foreignColumnName="LOCATION_ID"/>
+    </foreignKey>
+  </foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/users/composite/admin/CISTraining/Physical/Metadata/Oracle_Localhost/HR/EMPLOYEES" type="TABLE">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <dependency target="/users/composite/admin/CISTraining/Physical/Metadata/Oracle_Localhost/HR/LOCATIONS" type="TABLE">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <attribute name="creationDate" type="LONG">1486571334322</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="i:0:indexSchema" type="STRING">HR</attribute>
+  <attribute name="i:1:indexSchema" type="STRING">HR</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1487346126922</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1486571334322</attribute>
+</metadata>

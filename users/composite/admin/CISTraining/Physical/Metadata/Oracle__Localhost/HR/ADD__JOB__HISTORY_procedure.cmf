@@ -1,0 +1,32 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="ADD_JOB_HISTORY" path="/users/composite/admin/CISTraining/Physical/Metadata/Oracle_Localhost/HR/ADD_JOB_HISTORY" type="PROCEDURE" subtype="DATABASE_PROCEDURE" changeToken="0">
+  <parameters>
+    <parameter name="P_EMP_ID" direction="IN" nullable="unknown">
+      <datatype name="NUMBER" extendedName="NUMBER(6,0)" subType="DATASOURCE_TYPE" type="DECIMAL" maxDigits="6" maxFractionalDigits="0"/>
+    </parameter>
+    <parameter name="P_START_DATE" direction="IN" nullable="unknown">
+      <datatype name="DATE" extendedName="DATE" subType="DATASOURCE_TYPE" type="DATETIME"/>
+    </parameter>
+    <parameter name="P_END_DATE" direction="IN" nullable="unknown">
+      <datatype name="DATE" extendedName="DATE" subType="DATASOURCE_TYPE" type="DATETIME"/>
+    </parameter>
+    <parameter name="P_JOB_ID" direction="IN" nullable="unknown">
+      <datatype name="VARCHAR2" extendedName="VARCHAR2(10)" subType="DATASOURCE_TYPE" type="STRING" maxLength="10"/>
+    </parameter>
+    <parameter name="P_DEPARTMENT_ID" direction="IN" nullable="unknown">
+      <datatype name="NUMBER" extendedName="NUMBER(4,0)" subType="DATASOURCE_TYPE" type="DECIMAL" maxDigits="4" maxFractionalDigits="0"/>
+    </parameter>
+  </parameters>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="creationDate" type="LONG">1486571328426</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1486574803647</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1486571328426</attribute>
+</metadata>

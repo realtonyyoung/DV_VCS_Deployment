@@ -1,0 +1,326 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="StatsTbl" path="/users/composite/admin/CISTraining/Physical/Metadata/TDExpress/DBC/StatsTbl" type="TABLE" subtype="DATABASE_TABLE" changeToken="0" tableType="TABLE">
+  <annotation>The DBC.StatsTbl Table provides statistics information on each table. Some of the columns are: DatabaseId, ObjectId, ParentId, StatsId, StatsName, StatsSource, DBSVersion. SampleSignature, ThresholdSignature, UniqueValueCount, CreateTimeStamp </annotation>
+  <columns>
+    <column name="DatabaseId" nullable="false">
+      <datatype name="byte" extendedName="byte(4)" subType="DATASOURCE_TYPE" type="BINARY" minLength="4" maxLength="4"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The DatabaseId column is the Database Id of the source.</annotation>
+    </column>
+    <column name="ObjectId" nullable="false">
+      <datatype name="byte" extendedName="byte(6)" subType="DATASOURCE_TYPE" type="BINARY" minLength="6" maxLength="6"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The ObjectId column is the Id of an object on whose columns statistics are collected.</annotation>
+    </column>
+    <column name="ParentId" nullable="true">
+      <datatype name="byte" extendedName="byte(6)" subType="DATASOURCE_TYPE" type="BINARY" minLength="6" maxLength="6"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The ParentId column provides Parent Id of an underlying object of a view or query.</annotation>
+    </column>
+    <column name="StatsId" nullable="false">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The StatsId column provides Statistics identifier within each source COMMENT ON COLUMN DBC.StatsTbl.ParentId AS the ParentId column provides Parent Id of an underlying object of a view or query.</annotation>
+    </column>
+    <column name="StatsType" nullable="false">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The StatsType Column Saves the statistics type; T (Table Statistics), I (Join Index Statistics), N (Hash Index Statistics), V (View statistics), Q (Query Statistics), L (Link Row).</annotation>
+    </column>
+    <column name="StatsSource" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The StatsSource column records how statistics was collected</annotation>
+    </column>
+    <column name="DBSVersion" nullable="true">
+      <datatype name="varchar" extendedName="varchar(32)" subType="DATASOURCE_TYPE" type="STRING" maxLength="32"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>Returns the version of the database that contains the objects on which the statistics were collected.</annotation>
+    </column>
+    <column name="IndexNumber" nullable="true">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The IndexNumber column is the Index number of the index on which statistics are collected.</annotation>
+    </column>
+    <column name="SampleSignature" nullable="true">
+      <datatype name="varchar" extendedName="varchar(256)" subType="DATASOURCE_TYPE" type="STRING" maxLength="256"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The SampleSignature column is the Sample options encoded as a 10 character signature.</annotation>
+    </column>
+    <column name="SampleSizePct" nullable="true">
+      <datatype name="decimal" extendedName="decimal(5,2)" subType="DATASOURCE_TYPE" type="DECIMAL" maxDigits="5" maxFractionalDigits="2"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The SampleSizePct column is the Sample size percent used when collecting statistics. It is always 100% for geospatial index.</annotation>
+    </column>
+    <column name="ThresholdSignature" nullable="true">
+      <datatype name="varchar" extendedName="varchar(512)" subType="DATASOURCE_TYPE" type="STRING" maxLength="512"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The ThresholdSignature column is the Threshold options encoded as a 17 character signature.</annotation>
+    </column>
+    <column name="MaxIntervals" nullable="true">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The MaxIntervals column is the User-specified maximum number of intervals.</annotation>
+    </column>
+    <column name="MaxValueLength" nullable="true">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The MaxValueLength column is the User-specified maximum value length.</annotation>
+    </column>
+    <column name="ExpressionList" nullable="true">
+      <datatype name="varchar" extendedName="varchar(10000)" subType="DATASOURCE_TYPE" type="STRING" maxLength="10000"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The ExpressionList column iS the listist of columns or expressions statistics are collected on.</annotation>
+    </column>
+    <column name="FieldIdList" nullable="true">
+      <datatype name="varchar" extendedName="varchar(1000)" subType="DATASOURCE_TYPE" type="STRING" maxLength="1000"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The FieldIdListt column iS the list of fieldids on which statistics are collected separated by semicolon.</annotation>
+    </column>
+    <column name="StatsName" nullable="true">
+      <datatype name="varchar" extendedName="varchar(128)" subType="DATASOURCE_TYPE" type="STRING" maxLength="128"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The StatsName column contains the alias name assoicated with the statistic</annotation>
+    </column>
+    <column name="ExpressionCount" nullable="true">
+      <datatype name="smallint" extendedName="smallint" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The ExpressionCount column is the Number of expressions statistics is collected on. For geospatial index, it is always 1.</annotation>
+    </column>
+    <column name="UsageType" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The UsageType column is the Usage type of the statistics; S (Summary mode) and D (Detailed mode).</annotation>
+    </column>
+    <column name="ValidStats" nullable="true">
+      <datatype name="char" extendedName="char(1)" subType="DATASOURCE_TYPE" type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The ValidStats column Indicates whether the statistics are valid or not.</annotation>
+    </column>
+    <column name="ComplexStatInfo" nullable="true">
+      <datatype name="varchar" extendedName="varchar(2048)" subType="DATASOURCE_TYPE" type="STRING" maxLength="2048"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The ComplexStatInfo column contains metadata about the statistics binary image that is stored within the Histogram column. This is only used by complex data types such as geospatial.</annotation>
+    </column>
+    <column name="RefObjects" nullable="true">
+      <datatype name="varchar" extendedName="varchar(5000)" subType="DATASOURCE_TYPE" type="STRING" maxLength="5000"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The RefObjects column contains the list of other referenced objects in the view or query.</annotation>
+    </column>
+    <column name="RefColumns" nullable="true">
+      <datatype name="varchar" extendedName="varchar(5000)" subType="DATASOURCE_TYPE" type="STRING" maxLength="5000"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The RefColumns column contains the list of referenced columns in the WHERE clause of a view or query separated by comma.</annotation>
+    </column>
+    <column name="GroupByList" nullable="true">
+      <datatype name="varchar" extendedName="varchar(5000)" subType="DATASOURCE_TYPE" type="STRING" maxLength="5000"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The GroupByList column contains the list of grouping columns in a view or query separated by comma.</annotation>
+    </column>
+    <column name="RowCount" nullable="true">
+      <datatype name="float" extendedName="float" subType="DATASOURCE_TYPE" type="FLOAT"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The RowCount column is the row count of the table, view or query on which statistics are collected.</annotation>
+    </column>
+    <column name="UniqueValueCount" nullable="true">
+      <datatype name="float" extendedName="float" subType="DATASOURCE_TYPE" type="FLOAT"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The UniqueValueCount column is the Number of unique values of the ExpressionList.</annotation>
+    </column>
+    <column name="NullCount" nullable="true">
+      <datatype name="float" extendedName="float" subType="DATASOURCE_TYPE" type="FLOAT"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The NullCount column is the Number of nulls of the ExpressionList.</annotation>
+    </column>
+    <column name="AllNullCount" nullable="true">
+      <datatype name="float" extendedName="float" subType="DATASOURCE_TYPE" type="FLOAT"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The AllNullCount column is the Number of all nulls of the ExpressionList.</annotation>
+    </column>
+    <column name="PNullUniqueValueCount" nullable="true">
+      <datatype name="float" extendedName="float" subType="DATASOURCE_TYPE" type="FLOAT"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The PNullUniqueValueCount column is the Number of unique values from rows with partial nulls.</annotation>
+    </column>
+    <column name="HighModeFreq" nullable="true">
+      <datatype name="float" extendedName="float" subType="DATASOURCE_TYPE" type="FLOAT"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The HighModeFreq column is the highest frequency of values of the ExpressionList.</annotation>
+    </column>
+    <column name="PNullHighModeFreq" nullable="true">
+      <datatype name="float" extendedName="float" subType="DATASOURCE_TYPE" type="FLOAT"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The PNullHighModeFreq column is the highest frequency of values having partial nulls of the ExpressionList.</annotation>
+    </column>
+    <column name="Entropy" nullable="true">
+      <datatype name="float" extendedName="float" subType="DATASOURCE_TYPE" type="FLOAT"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The Entropy column specifies the entropy value of the given columns.</annotation>
+    </column>
+    <column name="Reserved1" nullable="true">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>This column indicates how many times the statistics collection on the ExpressionList has been skipped.</annotation>
+    </column>
+    <column name="Reserved2" nullable="true">
+      <datatype name="integer" extendedName="integer" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The estimated space savings percentage for primary subtable of manually compressed BLC tables.</annotation>
+    </column>
+    <column name="Reserved3" nullable="true">
+      <datatype name="float" extendedName="float" subType="DATASOURCE_TYPE" type="FLOAT"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>This column is not used.</annotation>
+    </column>
+    <column name="Reserved4" nullable="true">
+      <datatype name="float" extendedName="float" subType="DATASOURCE_TYPE" type="FLOAT"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>This column is not used.</annotation>
+    </column>
+    <column name="Reserved5" nullable="true">
+      <datatype name="varchar" extendedName="varchar(25)" subType="DATASOURCE_TYPE" type="STRING" maxLength="25"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>This column is not used.</annotation>
+    </column>
+    <column name="CreateUID" nullable="true">
+      <datatype name="byte" extendedName="byte(4)" subType="DATASOURCE_TYPE" type="BINARY" minLength="4" maxLength="4"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The CreateUID column contains the user id of the statistics creator.</annotation>
+    </column>
+    <column name="CreateTimeStamp" nullable="true">
+      <datatype name="timestamp" extendedName="timestamp" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The CreateTimeStamp column is the statistics creation time stamp.</annotation>
+    </column>
+    <column name="LastAlterUID" nullable="true">
+      <datatype name="byte" extendedName="byte(4)" subType="DATASOURCE_TYPE" type="BINARY" minLength="4" maxLength="4"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The LastAlterUID column contains the user id who updated the statistics options.</annotation>
+    </column>
+    <column name="LastAlterTimeStamp" nullable="true">
+      <datatype name="timestamp" extendedName="timestamp" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The LastAlterTimeStamp column is the last user options updated time stamp.</annotation>
+    </column>
+    <column name="LastCollectUID" nullable="true">
+      <datatype name="byte" extendedName="byte(4)" subType="DATASOURCE_TYPE" type="BINARY" minLength="4" maxLength="4"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The LastCollectUID column contains the user id who last collected statistics.</annotation>
+    </column>
+    <column name="LastCollectTimeStamp" nullable="true">
+      <datatype name="timestamp" extendedName="timestamp" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The LastCollectTimeStamp column is the Last statistics collection time stamp.</annotation>
+    </column>
+    <column name="Histogram" nullable="true">
+      <datatype name="blob" extendedName="blob" subType="DATASOURCE_TYPE" type="BLOB" maxLength="10285760"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>The Histogram column contains the histogram in binary form. For complex data types, this is Population Data in binary form (for geospatial, this is a TD GeoGrid).</annotation>
+    </column>
+  </columns>
+  <indexes>
+    <index name="StatsTbl_Index1" type="SYSTEM" unique="false">
+      <indexColumn name="ObjectId" sortOrder="ASCENDING"/>
+    </index>
+  </indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="creationDate" type="LONG">1487347401030</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="datatype_format" type="STRING">X(255)</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1487347401030</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1487347401030</attribute>
+</metadata>

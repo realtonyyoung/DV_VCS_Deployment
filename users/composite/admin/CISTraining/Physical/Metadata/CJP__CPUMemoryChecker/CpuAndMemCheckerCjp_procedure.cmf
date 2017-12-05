@@ -1,0 +1,34 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="CpuAndMemCheckerCjp" path="/users/composite/admin/CISTraining/Physical/Metadata/CJP_CPUMemoryChecker/CpuAndMemCheckerCjp" type="PROCEDURE" subtype="CUSTOM_PROCEDURE" changeToken="0">
+  <parameters>
+    <parameter name="cpuScriptNameOrCommand" direction="IN" nullable="true">
+      <datatype name="VARCHAR" subType="DATASOURCE_TYPE" type="STRING" maxLength="2147483647"/>
+    </parameter>
+    <parameter name="memScriptNameOrCommand" direction="IN" nullable="true">
+      <datatype name="VARCHAR" subType="DATASOURCE_TYPE" type="STRING" maxLength="2147483647"/>
+    </parameter>
+    <parameter name="cpuUsedPercent" direction="OUT" nullable="true">
+      <datatype name="VARCHAR" subType="DATASOURCE_TYPE" type="STRING" maxLength="2147483647"/>
+    </parameter>
+    <parameter name="memoryUsedMb" direction="OUT" nullable="true">
+      <datatype name="VARCHAR" subType="DATASOURCE_TYPE" type="STRING" maxLength="2147483647"/>
+    </parameter>
+    <parameter name="memoryAvailMb" direction="OUT" nullable="true">
+      <datatype name="VARCHAR" subType="DATASOURCE_TYPE" type="STRING" maxLength="2147483647"/>
+    </parameter>
+  </parameters>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="className" type="STRING">CpuAndMemCheckerCjp</attribute>
+  <attribute name="creationDate" type="LONG">1484642093263</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1484642093263</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1484642093263</attribute>
+  <attribute name="selectionState" type="INTEGER">2</attribute>
+</metadata>
