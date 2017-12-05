@@ -1,0 +1,108 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="pSendJMSMessage" path="/users/composite/admin/CISTraining/Triggers/pSendJMSMessage" type="PROCEDURE" subtype="SQL_SCRIPT_PROCEDURE" changeToken="0">
+  <parameters></parameters>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/lib/debug/Print" type="PROCEDURE">
+    <datatype type="PROCEDURE" refId="1">
+      <element name="textToPrint" direction="IN">
+        <datatype referenceDefinitionSet="/lib/util/System" referenceType="MessageValue" type="STRING" maxLength="64000"/>
+      </element>
+    </datatype>
+  </dependency>
+  <dependency target="/lib/jms/SendTextMessage" type="PROCEDURE">
+    <datatype type="PROCEDURE" refId="1">
+      <element name="connector" direction="IN">
+        <datatype referenceDefinitionSet="/lib/util/System" referenceType="PropertyValue" type="STRING" maxLength="4096"/>
+      </element>
+      <element name="destination" direction="IN">
+        <datatype referenceDefinitionSet="/lib/util/System" referenceType="PropertyValue" type="STRING" maxLength="4096"/>
+      </element>
+      <element name="body" direction="IN">
+        <datatype referenceDefinitionSet="/lib/util/System" referenceType="Text" type="STRING" maxLength="2147483647"/>
+      </element>
+    </datatype>
+  </dependency>
+  <dependency target="/lib/jms/SetMessageProperty" type="PROCEDURE">
+    <datatype type="PROCEDURE" refId="1">
+      <element name="name" direction="IN">
+        <datatype referenceDefinitionSet="/lib/util/System" referenceType="PropertyName" type="STRING" maxLength="255"/>
+      </element>
+      <element name="value" direction="IN">
+        <datatype referenceDefinitionSet="/lib/util/System" referenceType="PropertyValue" type="STRING" maxLength="4096"/>
+      </element>
+    </datatype>
+  </dependency>
+  <dependency target="/lib/util/GetProperty" type="PROCEDURE">
+    <datatype type="PROCEDURE" refId="1">
+      <element name="property" direction="IN">
+        <datatype referenceDefinitionSet="/lib/util/System" referenceType="PropertyName" type="STRING" maxLength="255"/>
+      </element>
+      <element name="result" direction="OUT">
+        <datatype referenceDefinitionSet="/lib/util/System" referenceType="PropertyValue" type="STRING" maxLength="4096"/>
+      </element>
+    </datatype>
+  </dependency>
+  <dependency target="/lib/util/System" type="DEFINITION_SET">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <attribute name="Script" type="STRING">PROCEDURE pSendJMSMessage()
+BEGIN
+	DECLARE userName 	VARCHAR(255) DEFAULT &apos;Unknown_User&apos;;
+	DECLARE userDomain 	VARCHAR(255) DEFAULT &apos;Unknown_Domain&apos;;
+	DECLARE message		VARCHAR(255);
+
+	-- Get the logged in user and domain to attach to the message
+	CALL /lib/util/GetProperty(System.CURRENT_USER_NAME, userName);
+	CALL /lib/util/GetProperty(System.CURRENT_USER_DOMAIN, userDomain);
+
+	-- Set the message property that the trigger selector will listen for.  e.g. uname=&apos;admin@composite&apos;
+	CALL /lib/jms/SetMessageProperty(&apos;uname&apos;,userName||&apos;@&apos;||userDomain);
+
+	-- Set the message content.
+	SET message = &apos;Test message from CIS for &apos;||userName||&apos;@&apos;||userDomain || &apos; at timestamp=&apos;||CAST(CURRENT_TIMESTAMP AS VARCHAR);
+	CALL print(&apos;Message sent: &apos;||message);
+
+	-- Send the JMS message to a given Connector name
+	CALL /lib/jms/SendTextMessage(&apos;CISTrainingConnector&apos;,&apos;dynamicQueues/CISTrainingQueue&apos;,message);
+END</attribute>
+  <attribute name="creationDate" type="LONG">1433275746861</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1492086688892</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="native_only" type="STRING">false</attribute>
+  <attribute name="references" type="MAP">
+    <item>
+      <key type="STRING">29/8</key>
+      <value type="STRING_ARRAY">
+        <item>lib</item>
+        <item>util</item>
+        <item>System</item>
+      </value>
+    </item>
+    <item>
+      <key type="STRING">7/16</key>
+      <value type="STRING_ARRAY">
+        <item>lib</item>
+        <item>debug</item>
+        <item>Print</item>
+      </value>
+    </item>
+    <item>
+      <key type="STRING">29/9</key>
+      <value type="STRING_ARRAY">
+        <item>lib</item>
+        <item>util</item>
+        <item>System</item>
+      </value>
+    </item>
+  </attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1433275746861</attribute>
+</metadata>

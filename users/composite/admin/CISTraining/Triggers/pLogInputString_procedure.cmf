@@ -1,0 +1,48 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="pLogInputString" path="/users/composite/admin/CISTraining/Triggers/pLogInputString" type="PROCEDURE" subtype="SQL_SCRIPT_PROCEDURE" changeToken="0">
+  <parameters>
+    <parameter name="trCondition" direction="IN" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="256"/>
+    </parameter>
+  </parameters>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/lib/debug/Log" type="PROCEDURE">
+    <datatype type="PROCEDURE" refId="1">
+      <element name="textToLog" direction="IN">
+        <datatype referenceDefinitionSet="/lib/util/System" referenceType="MessageValue" type="STRING" maxLength="64000"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="Script" type="STRING">PROCEDURE pLogInputString(IN trCondition VARCHAR(256))
+BEGIN
+  	DECLARE dLocDate DATE DEFAULT CURRENT_DATE(); 
+	DECLARE dLocTime TIME DEFAULT CURRENT_TIME(); 
+
+	CALL log(&apos;&lt;&apos; || dLocDate || &apos;@&apos; || dLocTime || &apos;&gt; &apos; || 
+					&apos;Detected trigger condition &quot;&apos; || trCondition);  
+END</attribute>
+  <attribute name="creationDate" type="LONG">1480703667063</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1492086688892</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="native_only" type="STRING">false</attribute>
+  <attribute name="references" type="MAP">
+    <item>
+      <key type="STRING">7/6</key>
+      <value type="STRING_ARRAY">
+        <item>lib</item>
+        <item>debug</item>
+        <item>Log</item>
+      </value>
+    </item>
+  </attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1480703667063</attribute>
+</metadata>
