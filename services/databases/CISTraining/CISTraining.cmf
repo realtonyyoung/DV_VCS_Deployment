@@ -1,0 +1,34 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="CISTraining" path="/services/databases/CISTraining" type="DATA_SOURCE" subtype="RELATIONAL" changeToken="0" virtual="true">
+  <security>
+    <owner user="admin" domain="composite"/>
+    <privilege user="anonymous" domain="composite" privileges="READ"/>
+    <privilege group="all" domain="composite" privileges="READ WRITE"/>
+    <privilege group="all" domain="dynamic" privileges="READ"/>
+  </security>
+  <dependency target="/users/composite/admin/CISTraining/Physical/Metadata/PostgreSQL_Training/training" type="CONTAINER">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <dependency target="/users/composite/admin/CISTraining/Physical/Metadata/PostgreSQL_Training/training" type="DATA_SOURCE">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <attribute name="authMethods" type="STRING">BASIC</attribute>
+  <attribute name="creationDate" type="LONG">1476465480251</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="ddlContainerPath" type="STRING"/>
+  <attribute name="ddlContainerPathMap" type="MAP"></attribute>
+  <attribute name="lastModifiedDate" type="LONG">1500567499797</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="name" type="STRING">CISTraining</attribute>
+  <attribute name="password" type="STRING"/>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1476465480251</attribute>
+  <attribute name="selectionState" type="INTEGER">2</attribute>
+  <attribute name="tempTableContainerPath" type="STRING">/users/composite/admin/CISTraining/Physical/Metadata/PostgreSQL_Training/training</attribute>
+  <attribute name="tempTableContainerPathMap" type="MAP"></attribute>
+  <attribute name="transportSecurity" type="STRING"/>
+  <attribute name="type" type="STRING">VirtualRelational</attribute>
+</metadata>

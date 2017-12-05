@@ -1,0 +1,33 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="10_averageDwellTimeRepeatVisitor" path="/services/databases/CMX/CMX_Data/10_averageDwellTimeRepeatVisitor" type="LINK" subtype="NONE" changeToken="0" virtual="true">
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/CMX/Application/Views/CMX_Data/10_averageDwellTimeRepeatVisitor" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="cmx">
+        <datatype type="STRING" minLength="3" maxLength="5" trailingSpaces="false"/>
+      </element>
+      <element name="periodStart">
+        <datatype type="DATE"/>
+      </element>
+      <element name="periodEnd">
+        <datatype type="DATE"/>
+      </element>
+      <element name="avgDwellRepeatVisitors">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="creationDate" type="LONG">1488278768192</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1489056534182</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1488278768192</attribute>
+  <attribute name="targetPath" type="STRING">/shared/CMX/Application/Views/CMX_Data/10_averageDwellTimeRepeatVisitor</attribute>
+  <attribute name="targetType" type="SHORT">2</attribute>
+</metadata>

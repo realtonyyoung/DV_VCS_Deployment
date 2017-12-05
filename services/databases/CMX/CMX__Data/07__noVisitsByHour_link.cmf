@@ -1,0 +1,135 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<metadata name="07_noVisitsByHour" path="/services/databases/CMX/CMX_Data/07_noVisitsByHour" type="LINK" subtype="NONE" changeToken="0" virtual="true">
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/CMX/Application/Views/CMX_Data/07_noVisitsByHour" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="cmx">
+        <datatype type="STRING" minLength="3" maxLength="5" trailingSpaces="false"/>
+      </element>
+      <element name="granularity">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="periodStart">
+        <datatype type="DATE"/>
+      </element>
+      <element name="periodEnd">
+        <datatype type="DATE"/>
+      </element>
+      <element name="timeRangeStart">
+        <datatype type="TIME"/>
+      </element>
+      <element name="timeRangeEnd">
+        <datatype type="TIME"/>
+      </element>
+      <element name="aggregate">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="areas">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="durationCategories">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="includeStationary">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="expandAll">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="id">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="lvl">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="area">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="cnt00">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt01">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt02">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt03">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt04">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt05">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt06">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt07">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt08">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt09">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt10">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt11">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt12">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt13">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt14">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt15">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt16">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt17">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt18">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt19">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt20">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt21">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt22">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="cnt23">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="creationDate" type="LONG">1488278768177</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1489056534182</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1488278768177</attribute>
+  <attribute name="targetPath" type="STRING">/shared/CMX/Application/Views/CMX_Data/07_noVisitsByHour</attribute>
+  <attribute name="targetType" type="SHORT">2</attribute>
+</metadata>
