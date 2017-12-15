@@ -39,7 +39,7 @@
   <attribute name="execTimeout" type="INTEGER">0</attribute>
   <attribute name="healthmonitortable" type="STRING">cis_hm_table</attribute>
   <attribute name="isPassThrough" type="STRING">Disabled</attribute>
-  <attribute name="lastModifiedDate" type="LONG">1512490881606</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1513355186932</attribute>
   <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
   <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
   <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
@@ -49,7 +49,7 @@
   <attribute name="maximumContainerDepth" type="INTEGER">1</attribute>
   <attribute name="minTargetToSourceRatioForSJ" type="STRING"/>
   <attribute name="name" type="STRING">newCustomers</attribute>
-  <attribute name="nativeDataLoadingEnabled" type="BOOLEAN">true</attribute>
+  <attribute name="nativeDataLoadingEnabled" type="BOOLEAN">false</attribute>
   <attribute name="password" type="STRING">E8B9DC218ED7C4C4</attribute>
   <attribute name="persistPassword" type="BOOLEAN">true</attribute>
   <attribute name="postgresqlEnableBulkLoad" type="BOOLEAN">true</attribute>
